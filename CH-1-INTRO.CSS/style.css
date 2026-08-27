@@ -1,0 +1,142 @@
+/*&                                                           CHAPTER 1 - INTRODUCTION                                                                     */
+
+/* WE HAVE ALREADY LEARNED ABOUT HTML, WHICH IS A MARKUP LANGUAGE USED TO STRUCTURE CONTENT ON THE WEB. NOW, WE WILL LEARN ABOUT CSS, WHICH STANDS FOR 
+CASCADING STYLE SHEETS.CSS IS A STYLING LANGUAGE USED TO STYLE HTML DOCUMENTS. IT IS USED TO DEFINE THE LAYOUT, COLORS, FONTS, AND OTHER VISUAL ASPECTS 
+OF WEB PAGES. */
+
+/*! IMPORTANT NOTE : 
+HERE WE MAKE A SAMPLE WEBSITE TO SHOW HOW ACTUALLY CSS WORKS WE YOU DIDN'T KNOW WHAT IS HTML AND HOW IT WORKS GO TO MY HTML TUTORIAL
+ON GITHUB PROVIDING YOU THE REPO OF HTML https://github.com/tanmay119-pera/HTML-PROGRAMMING.git AFTER DOING HTML YOU VAN JUMP ON THIS REPO
+NOW LETS START OUR CSS JOURNEY # HAPPY CODING. */
+
+/*^ EXTERNAL STYLE SHEET :
+writing CSS in a separate file and linking it to the HTML document is called an external style sheet. It is the most common way to apply CSS to web pages.*/
+
+/*^ COLOR PROPERTY :
+The color property is used to set the color of text in an HTML element. It can be specified using color names, hexadecimal values, RGB values, or HSL values.
+color: red;
+color: blue;
+color: green;
+color: pink; */
+
+h1
+{ 
+    color: red; /* h1 element will have red color */
+}
+
+p
+{ 
+    color: blue; /* p element will have blue color */
+}
+
+button {
+    color: green; /* button element will have green color */
+}
+
+/*^ BACKGROUND-COLOR PROPERTY :
+The background-color property is used to set the background color of an HTML element. It can be specified using color names, hexadecimal values, RGB values, or HSL values.
+background-color: yellow;
+background-color: lightblue;
+background-color: lightgreen;
+background-color: lightpink; */ 
+
+body
+{ 
+    background-color: lightblue; /* body element will have light blue background color */
+}
+
+button
+{ 
+    background-color: lightgreen; /* button element will have light green background color */
+}
+
+/*& COLOR SYSTEMS :
+
+1. Color Names: CSS supports a wide range of color names that can be used to specify colors. For example, "red", "blue", 
+"green", "yellow", etc.
+
+2. Hexadecimal Values: Colors can be specified using hexadecimal values, which are represented by a "#" followed
+    by six digits (0-9, A-F). For example, "#FF0000" represents red, "#0000FF" represents blue, and "#00FF00" represents green.
+
+3. RGB Values: Colors can also be specified using RGB (Red, Green, Blue) values. Each color component is represented by a number 
+between 0 and 255. For example, "rgb(255, 0, 0)" represents red, "rgb(0, 0, 255)" represents blue, and "rgb(0, 255, 0)" represents 
+green.
+
+4. HSL Values: Colors can also be specified using HSL (Hue, Saturation, Lightness) values. The hue is represented by a degree on 
+the color wheel (0-360), saturation is represented as a percentage (0%-100%), and lightness is also represented as a percentage 
+(0%-100%). For example, "hsl(0, 100%, 50%)" represents red, "hsl(240, 100%, 50%)" represents blue, and "hsl(120, 100%, 50%)" 
+represents green.*/
+
+/*! NOTE : YOU DON'T NEED TO WORRY ABOUT COLOR SYSTEMS NOW WE WILL LEARN ABOUT IT IN DETAIL YOU CAN ALSO USE COLOR PICKER BY GOOGLE TO GET THE COLOR OF YOUR CHOICE AND USE IT IN YOUR CSS FILE. */
+
+
+/*^ COLOR NAMES :
+
+CSS supports a wide range of color names that can be used to specify colors. For example, "red", "blue", "green", "yellow", etc. 
+Color names are easy to remember and can be used directly in CSS without the need for any additional calculations or conversions. 
+However, color names may not provide the same level of precision and flexibility as other color systems, such as hexadecimal or RGB 
+values. It is important for web designers and developers to understand the limitations of color names and to use them appropriately 
+in their designs. Additionally, it is important to consider accessibility and ensure that color choices provide sufficient contrast 
+for users with visual impairments. Overall, color names can be a useful tool for web designers and developers, but they should be 
+used in conjunction with other color systems to create visually appealing and accessible web content.*/
+
+h3
+{ 
+    color: green; /* h3 element will have green color */
+}
+
+/*^ HEXADECIMAL COLOR SYSTEM :
+
+The hexadecimal color system is a way of representing colors using a combination of six digits and letters. The first two 
+digits represent the red component, the next two digits represent the green component, and the last two digits represent the blue 
+component. Each component can have a value between 00 and FF, where 00 represents no intensity and FF represents full intensity. 
+By varying the values of each component, a wide range of colors can be created. The hexadecimal color system is commonly used in 
+web design and development to specify colors for HTML elements using CSS. It is widely supported by web browsers and is a fundamental
+aspect of web design and development. It is important for web designers and developers to understand the hexadecimal color system 
+and how to use it effectively to create visually appealing and accessible web content.*/
+
+h2
+{ 
+    color: #FF5733; /* h2 element will have hexadecimal color */
+}
+
+/*^ RGB COLOR SYSTEM :
+
+The RGB color system is a color model that represents colors as combinations of red, green, and blue light. Each color component 
+is represented by a value between 0 and 255, where 0 represents no intensity and 255 represents full intensity. By varying the 
+intensity of each color component, a wide range of colors can be created. The RGB color system is commonly used in digital displays, 
+such as computer monitors, televisions, and mobile devices. It is also used in web design and development to specify colors for 
+HTML elements using CSS. The RGB color system is based on the additive color model, where the primary colors of light 
+(red, green, and blue) are combined to create other colors. When all three primary colors are combined at full intensity, 
+they create white light. When all three primary colors are combined at zero intensity, they create black. 
+
+By adjusting the intensity of each primary color, a wide range of colors can be created, allowing for vibrant and dynamic 
+visual experiences on digital displays. The RGB color system is widely supported by web browsers and is a fundamental aspect of 
+web design and development. It is important for web designers and developers to understand the RGB color system and how to use 
+it effectively to create visually appealing and accessible web content.*/
+
+h4
+{ 
+    color: rgb(191, 131, 138); /* h4 element will have rgb color */
+}
+
+/*^ HSL COLOR SYSTEM :
+
+The HSL color system is a color model that represents colors using three components: hue, saturation, and lightness. The hue component
+is represented by a degree on the color wheel (0-360), where 0 represents red, 120 represents green, and 240 represents blue. 
+The saturation component is represented as a percentage (0%-100%), where 0% represents no saturation (gray) and 100% represents 
+full saturation (vivid color). The lightness component is also represented as a percentage (0%-100%), where 0% represents black, 
+50% represents the pure color, and 100% represents white.an HSL color value is specified using the hsl() function, which takes three parameters: hue, saturation, and lightness.
+For example, hsl(0, 100%, 50%) represents red, hsl(120, 100%, 50%) represents green, and hsl(240, 100%, 50%) represents blue. 
+
+The HSL color system is commonly used in web design and development to specify colors for HTML elements using CSS. It is based on 
+the perceptual model of color, which takes into account how humans perceive color. By adjusting the hue, saturation, and lightness 
+components, a wide range of colors can be created, allowing for more nuanced and visually appealing designs. The HSL color system 
+is widely supported by web browsers and is a fundamental aspect of web design and development. It is important for web designers 
+and developers to understand the HSL color system and how to use it effectively to create visually appealing and accessible web 
+content.*/
+
+h5
+{ 
+    color: hsl(240, 100%, 50%); /* h5 element will have hsl color */
+}
