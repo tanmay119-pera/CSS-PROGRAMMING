@@ -1,4 +1,4 @@
-/*&                                                           CHAPTER 1 - INTRODUCTION                                                                     */
+/*&                                                       CHAPTER 1 - INTRODUCTION TO CSS                                                                 */
 
 /* WE HAVE ALREADY LEARNED ABOUT HTML, WHICH IS A MARKUP LANGUAGE USED TO STRUCTURE CONTENT ON THE WEB. NOW, WE WILL LEARN ABOUT CSS, WHICH STANDS FOR 
 CASCADING STYLE SHEETS.CSS IS A STYLING LANGUAGE USED TO STYLE HTML DOCUMENTS. IT IS USED TO DEFINE THE LAYOUT, COLORS, FONTS, AND OTHER VISUAL ASPECTS 
@@ -50,7 +50,12 @@ button
     background-color: lightgreen; /* button element will have light green background color */
 }
 
-/*& COLOR SYSTEMS :
+/*& COMMENTS IN CSS :
+
+Comments in CSS are used to add notes or explanations to the code. They are ignored by the browser and do not 
+affect the styling of the web page. what ever i write in the comments will be ignored by the browser. by using asterisk+slash */
+
+/*& COLOR SYSTEMS IN CSS :
 
 1. Color Names: CSS supports a wide range of color names that can be used to specify colors. For example, "red", "blue", 
 "green", "yellow", etc.
@@ -140,3 +145,77 @@ h5
 { 
     color: hsl(240, 100%, 50%); /* h5 element will have hsl color */
 }
+
+/* PRACTICE QUESTION 1 : HOW TO MAKE YELLOW COLOR USING HEXADECIMAL, RGB AND HSL COLOR SYSTEMS. 
+
+SOLUTION :
+1. HEXADECIMAL: #FFFF00 ,HERE #FF IS FOR RED, #FF IS FOR GREEN AND #00 IS FOR BLUE AND IF WE MIX RED AND GREEN COLOR WE GET YELLOW COLOR.
+2. RGB: rgb(255, 255, 0) , HERE 255 IS FOR RED, 255 IS FOR GREEN AND 0 IS FOR BLUE AND IF WE MIX RED AND GREEN COLOR WE GET YELLOW COLOR.
+3. HSL: hsl(60, 100%, 50%),HERE 60 IS FOR HUE, 100% IS FOR SATURATION AND 50% IS FOR LIGHTNESS. */
+
+/*& SELECTORS :
+Selectors are used to target specific HTML elements and apply styles to them. There are several types of selectors in CSS, including:
+
+BASIC SELECTORS : 
+
+1. Element Selector: Targets HTML elements based on their tag name. For example, "p" targets all <p> elements.
+
+2. Class Selector: Targets HTML elements based on their class attribute. For example, ".my-class" targets all elements with the class "my-class".
+
+3. ID Selector: Targets a specific HTML element based on its ID attribute. For example, "#my-id" targets the element with the ID "my-id".
+
+ADVANCED SELECTORS : (READ IT FOR KNOWLEDGE PURPOSE CAUSE THIS IS NOT THE TOPIC OF THIS CHAPTER WE WILL LEARN ABOUT IT IN DETAIL IN UPCOMING CHAPTERS)
+
+4. Attribute Selector: Targets HTML elements based on their attributes. For example "[type='text']" targets all input elements with the type attribute 
+set to "text".
+
+5. Pseudo-class Selector: Targets HTML elements based on their state or position. For example, ":hover" targets elements when they are being 
+hovered over by the mouse pointer.
+
+6. Pseudo-element Selector: Targets specific parts of an HTML element. For example, "::before" targets the content before an element, 
+and "::after" targets the content after an element.
+
+7. Grouping Selector: Allows you to apply the same styles to multiple selectors at once. For example, "h1, h2, h3" targets 
+all <h1>, <h2>, and <h3> elements.
+
+8. Descendant Selector: Targets elements that are descendants of a specified element. For example, "div p" targets all <p> elements that are 
+inside a <div> element.
+
+9. Child Selector: Targets elements that are direct children of a specified element. For example, "div > p" targets all <p> elements that are 
+direct children of a <div> element.
+
+10. Adjacent Sibling Selector: Targets an element that is immediately preceded by a specified element. For example, "h1 + p" targets 
+the first <p> element that comes immediately after an <h1> element.
+
+11. General Sibling Selector: Targets all elements that are siblings of a specified element. For example, "h1 ~ p" targets all <p> elements 
+that are siblings of an <h1> element. */
+
+/*^ 1. ELEMENT SELECTOR :*/
+*
+{ 
+    font-family: Arial, sans-serif; /* All elements will have Arial font */
+} 
+
+h1
+{ 
+    font-family: Arial, cursive; /* h1 element will have font size of 36px */
+}
+/* so while css come in play it will apply thr arial font to all elements and then it will apply cursive font to h1 element because h1 is a child of * selector.
+and it will change h1 element */
+
+/*^ 2. CLASS SELECTOR :*/
+.my-class
+{ 
+    color: blue; /* elements with class "my-class" will have blue color */
+}
+
+/*^ 3. ID SELECTOR :*/
+#heading
+{ 
+    color: yellow; /* element with id "heading" will have yellow color */
+}
+
+/*! NOTE : WE HAVE ONLY SHOWED THE EXAMPLE OF BASIC SELECTORS IN THIS CHAPTER WE WILL LEARN ABOUT ALL THE SELECTORS IN DETAIL IN UPCOMING CHAPTERS.
+1. ELEMENT SELECTOR
+2. CLASS SELECTOR
+3. ID SELECTOR */

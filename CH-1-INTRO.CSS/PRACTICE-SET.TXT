@@ -1,0 +1,22 @@
+                                               PRACTICE SET -  1
+
+=====================================================================================================================================              
+                                            IMPORTANT NOTE FOR ALL 
+
+Welcome to your first-ever practice set! I’ve put together these practice questions to help anyone following along easily grasp 
+core CSS concepts.
+
+I’m providing these questions in .txt format to keep the main chapter files clean and uncluttered. The entire HTML, CSS, and 
+JavaScript series will follow this exact structure. Rest assured, all the provided code includes helpful comments and is designed 
+to run easily so you can follow along as a beginner.
+
+While you can always use AI tools for assistance, I highly encourage you to try learning and writing the code yourself first. 
+Once you've given it your best effort, you can check your work against the provided answers or copy-paste them into your main 
+code editor to see the final results.
+
+Author: 
+Adesh Srivastava (Tanmay) [tanmay119-pera]
+==========================================================================================================================================
+
+PROBLEM 1.
+
