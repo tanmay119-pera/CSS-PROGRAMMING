@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            background-color: blue; /* button element will have green text color */
+        }
+    </style>
 </head>
 <body>
-    <div id="box">
-        this is simple text
-    </div>
-    
+    <button style="background-color: red">Click Me</button>
 </body>
 </html>
+
+<!-- in this case it will take the color from the internal css file because it has more priority than external css file 
+ and inline tag has much more priority than internal css file and external css file -->

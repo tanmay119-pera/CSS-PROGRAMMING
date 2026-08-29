@@ -1,3 +1,4 @@
-#box
-{ background-color: blue;
+button {
+    color : green; /* button element will have green text color */
 }
+/* in this case it will take the color from the internal css file because it has more priority than external css file */

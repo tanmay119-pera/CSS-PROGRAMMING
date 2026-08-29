@@ -19,4 +19,99 @@ Adesh Srivastava (Tanmay) [tanmay119-pera]
 ==========================================================================================================================================
 
 PROBLEM 1.
+Create a simple div with an id "box". add some text content inside the div.
+set its background color to blue.
 
+solution - 
+
+1. HTML FILE -
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        this is simple text
+    </div>
+    
+</body>
+</html>
+
+2. STYLE.CSS - 
+
+#box
+{ background-color: blue;
+}
+===============================================================================================================================================================
+PROBLEM 2.
+Create 3 headings with h1,h2 & h3. Give them all a class "heading" to red.
+
+solution-
+
+HTML FILE -
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading"> heading 1 </h1>
+    <h2 class="heading"> heading 2 </h2>
+    <h3 class="heading"> heading 3 </h3>
+</body>
+</html>
+
+STYLE.CSS - 
+
+.heading {
+    color: red; /* heading element will have red color */
+
+}
+=======================================================================================================================================
+PROBLEM 3.
+Create a button & set its background color to :
+> green using css stylesheet
+> blue using <style>tag 
+> pink using inline style 
+
+solution - 
+ 
+HTML FILE -
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            background-color: blue; /* button element will have green text color */
+        }
+    </style>
+</head>
+<body>
+    <button style="background-color: red">Click Me</button>
+</body>
+</html>
+
+<!-- in this case it will take the color from the internal css file because it has more priority than external css file 
+ and inline tag has much more priority than internal css file and external css file -->
+
+CSS FILE - 
+
+button {
+    color : green; /* button element will have green text color */
+}
+/* in this case it will take the color from the internal css file because it has more priority than external css file */
+=================================================================================================================================================
