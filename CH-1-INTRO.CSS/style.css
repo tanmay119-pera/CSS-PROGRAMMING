@@ -219,3 +219,164 @@ and it will change h1 element */
 1. ELEMENT SELECTOR
 2. CLASS SELECTOR
 3. ID SELECTOR */
+
+
+/*& TEXT ALIGNMENT :
+
+The text-align property is used to set the horizontal alignment of text within an HTML element. It can take several values, 
+including "left", "right", "center", and "justify". The "left" value aligns the text to the left edge of the element, while the 
+"right" value aligns the text to the right edge. The "center" value centers the text horizontally within the element, 
+and the "justify" value aligns the text to both the left and right edges of the element, creating a clean and even appearance. 
+
+The text-align property can be applied to block-level elements, such as paragraphs and headings, as well as inline elements, 
+such as spans and links. It is an important property for web designers and developers to understand, as it can greatly affect the 
+readability and visual appeal of web content. By using the text-align property effectively, designers can create visually appealing 
+and easy-to-read web pages that enhance the user experience.*/
+
+/*! NOTE - I HAVE TAKEN SOME RANDOM ELEMENTS LIKE P1, P11, P111, P12 TO SHOW THE EFFECT OF TEXT DECORATION AND FONT FAMILY PROPERTIES. 
+/*! YOU CAN USE ANY ELEMENTS LIKE H1, H2, H3, H4, H5, H6, P, SPAN, DIV ETC IN YOUR REAL USER PROJECT AND ADAPT THEM TO YOUR NEEDS. */
+
+/*^ 1. LEFT ALIGNMENT :
+this will align the text or headings to the left of the element.*/
+p{ 
+    text-align: left; /* p element will have left aligned text */
+}
+
+/*^ 2. RIGHT ALIGNMENT :
+this will align the text to the right of the element.*/
+p{ 
+    text-align: right; /* p element will have right aligned text */
+}
+
+/*^ 3. CENTER ALIGNMENT :
+this will align the text to the center of the element.*/
+p{ 
+    text-align: center; /* p element will have centered text */
+}
+
+/*^ 4. JUSTIFY ALIGNMENT :
+this will align the text to both the left and right edges of the element, creating a clean and even appearance.*/
+h1{ 
+    text-align: justify; /* p element will have justified text */
+}
+
+/* you can try all the above text alignment properties one by one to see the effect of each property on the p element. */
+
+/*& TEXT DECORATION :
+The text-decoration property is used to add decorative elements to text, such as underlines, overlines, and strikethroughs. 
+It can take several values, including "none", "underline", "overline", and "line-through". The "none" value removes any existing 
+decoration, while the other values add the corresponding decoration to the text. */
+
+/*^ 1. UNDERLINE :
+this will add an underline to the text of the element.*/
+
+P1{
+    text-decoration: underline; /* p element will have an underline */
+}
+
+/*^ 2. OVERLINE :
+this will add an overline to the text of the element.*/
+
+P12{
+    text-decoration: overline; /* p element will have an overline */
+}
+
+/*^ 3. LINE-THROUGH :
+this will add a strikethrough to the text of the element.*/
+
+P11{
+    text-decoration: line-through; /* p element will have a strikethrough */
+}
+
+/*^ 4. NONE :
+this will remove any existing decoration from the text of the element.*/
+
+P111{
+    text-decoration: none; /* p element will have no decoration */
+}
+
+/*& FONT-WEIGHT :
+The font-weight property is used to set the thickness or boldness of text in an HTML element. It can take several values, 
+including "normal", "bold", "bolder", and "lighter". The "normal" value sets the text to its default weight, while the "bold" 
+value makes the text thicker and more prominent. The "bolder" value increases the weight of the text relative to its parent element, 
+while the "lighter" value decreases the weight of the text relative to its parent element. 
+
+The font-weight property can also take numeric values, ranging from 100 to 900, where 400 is equivalent to "normal" and 700 
+is equivalent to "bold". By using the font-weight property effectively, designers can create visually appealing and easy-to-read 
+web pages that enhance the user experience. It is important for web designers and developers to understand the font-weight property 
+and how to use it effectively to create visually appealing and accessible web content.*/
+
+/*^ 1. NORMAL :
+this will set the text to its default weight.*/
+p{
+    font-weight: normal; /* p element will have normal font weight */
+}
+
+/*^ 2. BOLD :
+this will make the text thicker and more prominent.*/
+p{
+    font-weight: bold; /* p element will have bold font weight */
+}
+
+/*^ 3. BOLDER :
+this will increase the weight of the text relative to its parent element.*/
+p{
+    font-weight: bolder; /* p element will have bolder font weight */
+}
+
+/*^ 4. LIGHTER :
+this will decrease the weight of the text relative to its parent element.*/
+p{
+    font-weight: lighter; /* p element will have lighter font weight */
+}
+
+/*& FONT FAMILY :
+The font-family property is used to specify the typeface or font to be used for text in an HTML element. It can take a list of font names, separated by commas, where the browser will use the first available font in the list. The font-family property can also take generic font families, such as "serif", "sans-serif", and "monospace", which are used to specify a general type of font. By using the font-family property effectively, designers can create visually appealing and easy-to-read web pages that enhance the user experience. It is important for web designers and developers to understand the font-family property and how to use it effectively to create visually appealing and accessible web content.*/
+
+/*^ 1. SERIF :
+Serif fonts are characterized by small lines or flourishes at the ends of the letters. They are often used in print media and are considered more 
+traditional and formal. Examples of serif fonts include Times New Roman, Georgia, and Garamond. Serif fonts are often used for body text in printed 
+materials, as they are believed to be easier to read in long passages of text. However, they may not be as legible on digital screens, especially at 
+smaller font sizes. It is important for web designers and developers to consider the context in which the font will be used and to choose a font that is 
+appropriate for the intended audience and medium. By using serif fonts effectively, designers can create visually appealing and easy-to-read web pages that 
+enhance the user experience.*/
+
+P{
+    font-family: "Times New Roman", Times, serif; /* p element will have Times New Roman font */
+}
+
+/*^ 2. SANS-SERIF :
+Sans-serif fonts are characterized by the absence of small lines or flourishes at the ends of the letters. They are often used in digital media
+and are considered more modern and clean. Examples of sans-serif fonts include Arial, Helvetica, and Verdana. Sans-serif fonts are often used for 
+headings and other display text, as they are believed to be more legible on digital screens, especially at smaller font sizes. However,
+they may not be as effective for long passages of text, as they can be more difficult to read in print media. It is important for web designers and 
+developers to consider the context in which the font will be used and to choose a font that is appropriate for the intended audience and medium. 
+By using sans-serif fonts effectively, designers can create visually appealing and easy-to-read web pages that enhance the user experience.*/
+
+P1{
+    font-family: Arial, Helvetica, sans-serif; /* p element will have Arial font */
+}
+
+/*^ 3. MONOSPACE :
+Monospace fonts are characterized by each character taking up the same amount of horizontal space. They are often used in programming and coding 
+environments, as they make it easier to align text and read code. Examples of monospace fonts include Courier, Consolas, and Monaco. Monospace fonts are 
+often used for displaying code snippets, terminal output, and other technical content, as they provide a clear and consistent visual representation of text. 
+However, they may not be as effective for general-purpose text, as they can be more difficult to read in long passages of text. It is important 
+for web designers and developers to consider the context in which the font will be used and to choose a font that is appropriate for the intended audience 
+and medium. By using monospace fonts effectively, designers can create visually appealing and easy-to-read web pages that enhance the user experience.*/
+
+P11{
+    font-family: "Courier New", Courier, monospace; /* p element will have Courier New font */
+}
+
+/*^ 4. CURSIVE :
+Cursive fonts are characterized by their flowing, handwritten style. They are often used for decorative purposes and can add a personal touch to web content. 
+Examples of cursive fonts include Brush Script, Pacifico, and Great Vibes. Cursive fonts are often used for headings, invitations, and other decorative text, 
+as they can create a unique and visually appealing look. However, they may not be as effective for body text, as they can be more difficult to read in 
+long passages of text. It is important for web designers and developers to consider the context in which the font will be used and to choose a font 
+that is appropriate for the intended audience and medium. By using cursive fonts effectively, designers can create visually appealing and easy-to-read 
+web pages that enhance the user experience.*/
+
+P111{
+    font-family: "Brush Script MT", cursive; /* p element will have Brush Script MT font */
+}
