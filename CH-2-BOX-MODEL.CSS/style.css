@@ -229,7 +229,15 @@ element to 50%, it will take up half the width of its parent element.
 
 3.rems (rem) : The rem unit is relative to the font size of the root element (usually the <html> element). For example, 
 if the font size of the root element is 16px, 1rem is equal to 16px. If you set the width of an element to 2rem, 
-it will be twice the font size of the root element.*/
+it will be twice the font size of the root element.
+
+4. vh (viewport height) : The vh unit is relative to the height of the viewport (the browser window). For example, 
+if the viewport height is 100vh, then 1vh is equal to 1% of the viewport height. If you set the height of an element 
+to 50vh, it will be half the height of the viewport. 
+
+5.vw (viewport width) : The vw unit is relative to the width of the viewport (the browser window). For example, 
+if the viewport width is 100vw, then 1vw is equal to 1% of the viewport width. If you set the width of an element to 50vw, 
+it will be half the width of the viewport. */
 
 /*^ percentage unit in CSS :*/
 
@@ -271,6 +279,94 @@ div {
 /* here the sign of rem is used in both div's to set the width and height of the box relative to the font size of the root 
 element. */
 
+/*^ vh unit in CSS :*/
 
+div {
+    width: 50vh; /* Sets the width of the box to 50% of the viewport height */
+    background-color: lightblue; /* Sets the background color of the box */
+}
 
+div {
+    height: 50vh; /* Sets the height of the box to 50% of the viewport height */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+/* here the sign of vh is used in both div's to set the width and height of the box relative to the height of the viewport. */
+
+/*^ vw unit in CSS :*/
+
+div {
+    width: 50vw; /* Sets the width of the box to 50% of the viewport width */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    height: 50vw; /* Sets the height of the box to 50% of the viewport width */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+/* here the sign of vw is used in both div's to set the width and height of
+
+/*& POSITION PROPERTY IN CSS :
+1. static : The default position value. Elements are positioned according to the normal flow of the document.
+
+2. relative : The element is positioned relative to its normal position. You can use the top, right, bottom, and left 
+properties to adjust its position.
+
+3. absolute : The element is positioned relative to its nearest positioned ancestor (not static). If there is no such 
+ancestor, it will be positioned relative to the initial containing block (usually the <html> element).
+
+4. fixed : The element is positioned relative to the viewport, which means it stays in the same place even when the page is 
+scrolled. It is often used for elements like navigation bars or sticky headers.
+
+5. sticky : The element is positioned based on the user's scroll position. It toggles between relative and fixed, depending 
+on the scroll position. It is often used for elements that should stick to the top of the viewport when scrolling down, 
+but return to their normal position when scrolling back up. */
+
+/*^ static position property in CSS :*/
+
+#box1 {
+    position: static; /* Sets the position of the box to static */
+    background-color: lightblue;
+    display: inline-block; /* Sets the display property of the box to inline-block */
+}
+
+#box2 {
+    position: static; /* Sets the position of the box to static */
+    background-color: lightgreen; /* Sets the background color of the box */
+}
+
+/*^ relative position property in CSS :*/
+
+#box1 {
+    position: relative; /* Sets the position of the box to relative */
+    top: 20px; /* Moves the box 20 pixels down from its normal position */
+    left: 20px; /* Moves the box 20 pixels to the right from its normal position */
+    background-color: lightblue; /* Sets the background color of the box */
+    display: inline-block; /* Sets the display property of the box to inline-block */
+}
+
+#box2 {
+    position: relative; /* Sets the position of the box to relative */
+    top: 40px; /* Moves the box 40 pixels down from its normal position */
+    left: 40px; /* Moves the box 40 pixels to the right from its normal position */
+    background-color: lightgreen; /* Sets the background color of the box */
+    display: inline-block; /* Sets the display property of the box to inline-block */
+}
+
+/*^ absolute position property in CSS :*/
+
+#box1 {
+    position: absolute; /* Sets the position of the box to absolute */
+    top: 20px; /* Moves the box 20 pixels down from its nearest positioned ancestor */
+    left: 20px; /* Moves the box 20 pixels to the right from its nearest positioned ancestor */
+    background-color: lightblue; /* Sets the background color of the box */
+    display: inline-block; /* Sets the display property of the box to inline-block */
+}
+
+#box2 {
+    position: absolute; /* Sets the position of the box to absolute */
+    top: 40px; /* Moves the box 40 pixels down from its nearest positioned ancestor */
+    left: 40px; /* Moves the box 40 pixels to the right from its nearest positioned ancestor */
+    background-color: lightgreen; /* Sets the background color of the box */
+    display: inline-block; /* Sets the display property of the box to inline-block */
+}
 
