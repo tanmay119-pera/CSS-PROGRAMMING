@@ -430,7 +430,7 @@ p{
     font-size: 1.2em; /* elements with class "class" will have font size of 1.2em */
 }
 
-/*& line - height :
+/*& LINE-HEIGHT :
 The line-height property is used to set the amount of space between lines of text in an HTML element. It can take several values, including normal, a specific length (in pixels, ems, or percentages), or a unitless number that is multiplied by the font size of the element.
 The line-height property is an important aspect of web design, as it can greatly affect the readability and visual appeal of text on a web page. By adjusting the line height, designers can create a more comfortable reading experience for users, especially for long passages of text. It is important for web designers and developers to understand the use of the line-height property in CSS and how to use it effectively to create responsive and visually appealing web pages. By using the line-height property in combination with other properties, such as font size and font family, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, using appropriate line heights can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the spacing between lines of text based on their preferences. Overall, understanding the use of the line-height property in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
 
@@ -446,7 +446,7 @@ p{
     line-height: normal; /* elements with class "class" will have line height of normal */
 }
 
-/*& text-transform :
+/*& TEXT-TRANSFORM :
 The text-transform property is used to control the capitalization of text in an HTML element. It can take several values, 
 including none, capitalize, uppercase, and lowercase. The none value leaves the text unchanged, while the capitalize value 
 capitalizes the first letter of each word. The uppercase value converts all letters to uppercase, and the lowercase value converts 
@@ -477,7 +477,7 @@ P2{
     text-transform: none; /* p element will have no text transformation */
 }
 
-/*& text-indent :
+/*& TEXT INDENT :
 The text-indent property is used to specify the indentation of the first line of text in an HTML element. 
 It can take several values, including a specific length (in pixels, ems, or percentages) or a negative value to create a hanging 
 indent. The text-indent property is an important aspect of web design, as it can greatly affect the readability and visual appeal 
@@ -576,16 +576,6 @@ and cascading is essential for creating effective and responsive web designs tha
 user experience.*/
 
 
-/*! THIS IS THE END OF CHAPTER 1 OF CSS. IN THIS CHAPTER WE HAVE LEARNT ABOUT THE FOLLOWING TOPICS :
-1. INTRODUCTION TO CSS
-2. TYPES OF CSS
-3. CSS SYNTAX
-4. CSS SELECTORS
-5. CSS PROPERTIES
-6. CSS UNITS
-7. CSS PRIORITY
-8. CSS INHERITANCE
-9. CSS CASCADING
-10. CSS IMPORTANCE
+/*! THIS IS THE END OF CHAPTER 1 OF CSS HOPE YOU HAVE LEARNT THE BASIC CONCEPTS OF CSS. IN THE UPCOMING CHAPTERS WE WILL LEARN ABOUT THE ADVANCED CONCEPTS OF CSS. */
 
 /*^ NOTE : IN THIS CHAPTER WE HAVE LEARNT ABOUT THE BASIC CONCEPTS OF CSS. IN THE UPCOMING CHAPTERS WE WILL LEARN ABOUT THE ADVANCED CONCEPTS OF CSS. */
