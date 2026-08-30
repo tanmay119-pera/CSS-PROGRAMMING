@@ -447,7 +447,19 @@ p{
 }
 
 /*& text-transform :
-The text-transform property is used to control the capitalization of text in an HTML element. It can take several values, including none, capitalize, uppercase, and lowercase. The none value leaves the text unchanged, while the capitalize value capitalizes the first letter of each word. The uppercase value converts all letters to uppercase, and the lowercase value converts all letters to lowercase. The text-transform property is an important aspect of web design, as it can greatly affect the readability and visual appeal of text on a web page. By using the text-transform property effectively, designers can create a more visually appealing and consistent appearance for text on a web page. It is important for web designers and developers to understand the use of the text-transform property in CSS and how to use it effectively to create responsive and visually appealing web pages. By using the text-transform property in combination with other properties, such as font size and font family, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, using appropriate text transformations can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the capitalization of text based on their preferences. Overall, understanding the use of the text-transform property in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+The text-transform property is used to control the capitalization of text in an HTML element. It can take several values, 
+including none, capitalize, uppercase, and lowercase. The none value leaves the text unchanged, while the capitalize value 
+capitalizes the first letter of each word. The uppercase value converts all letters to uppercase, and the lowercase value converts 
+all letters to lowercase. The text-transform property is an important aspect of web design, as it can greatly affect the readability
+and visual appeal of text on a web page. By using the text-transform property effectively, designers can create a more visually 
+appealing and consistent appearance for text on a web page. It is important for web designers and developers to understand the use
+of the text-transform property in CSS and how to use it effectively to create responsive and visually appealing web pages. 
+By using the text-transform property in combination with other properties, such as font size and font family, designers can 
+create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, 
+using appropriate text transformations can help ensure that web pages are accessible to users with different visual impairments,
+as they can adjust the capitalization of text based on their preferences. Overall, understanding the use of the text-transform 
+property in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance 
+the overall user experience.*/
 
 p{
     text-transform: uppercase; /* p element will have uppercase text */
@@ -464,3 +476,116 @@ p{
 P2{
     text-transform: none; /* p element will have no text transformation */
 }
+
+/*& text-indent :
+The text-indent property is used to specify the indentation of the first line of text in an HTML element. 
+It can take several values, including a specific length (in pixels, ems, or percentages) or a negative value to create a hanging 
+indent. The text-indent property is an important aspect of web design, as it can greatly affect the readability and visual appeal 
+of text on a web page. By using the text-indent property effectively, designers can create a more visually appealing and organized 
+appearance for text on a web page. It is important for web designers and developers to understand the use of the text-indent property
+in CSS and how to use it effectively to create responsive and visually appealing web pages. By using the text-indent 
+property in combination with other properties, such as font size and line height, designers can create web pages that are both
+visually appealing and functional across a wide range of devices and screen sizes. 
+
+Additionally, using appropriate text indentation can help ensure that web pages are accessible to users with different visual 
+impairments, as they can adjust the indentation of text based on their preferences. Overall, understanding the use of the 
+text-indent property in CSS is essential for creating effective and responsive web designs that meet the needs 
+of users and enhance the overall user experience.*/ 
+
+p{
+    text-indent: 50px; /* p element will have a text indentation of 50px */
+}
+
+p{
+    text-indent: 2em; /* p element will have a text indentation of 2em */
+}
+
+p{
+    text-indent: 10%; /* p element will have a text indentation of 10% */
+}
+
+p{
+    text-indent: -20px; /* p element will have a negative text indentation of -20px */
+}
+
+/*& CSS PRIORITY :
+CSS priority, also known as specificity, is a set of rules that determine which CSS styles are applied to an HTML element when 
+multiple styles are defined for the same element. The priority of CSS styles is determined by the specificity of the selectors 
+used to target the element. The more specific the selector, the higher its priority. For example, an ID selector has a higher 
+specificity than a class selector, and a class selector has a higher specificity than an element selector. When multiple styles 
+are defined for the same element, the style with the highest specificity will be applied. If two styles have the same specificity, 
+
+the style that is defined last in the CSS file will be applied. It is important for web designers and developers to understand 
+CSS priority and how to use it effectively to create responsive and visually appealing web pages. By using specific selectors and 
+organizing CSS styles in a logical manner, designers can ensure that the desired styles are applied to the correct elements and 
+that the overall design of the web page is consistent and visually appealing. Additionally, understanding CSS priority can help 
+prevent conflicts between styles and ensure that the web page is accessible to users with different visual impairments, as they 
+can adjust the styles based on their preferences. Overall, understanding CSS priority is essential for creating effective and 
+responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+/*^ 1. INLINE STYLE :
+Inline styles are CSS styles that are applied directly to an HTML element using the style attribute.
+/*^ 2. INTERNAL STYLE SHEET :  
+Internal style sheets are CSS styles that are defined within the <style> tags in the head section of an HTML document.
+/*^ 3. EXTERNAL STYLE SHEET :
+External style sheets are CSS styles that are defined in a separate CSS file and linked to an HTML document using the <link> tag.
+/*^ 4. IMPORTED STYLE SHEET :
+Imported style sheets are CSS styles that are defined in a separate CSS file and imported into another CSS file using the @import rule.*/
+/*^ 5. BROWSER DEFAULT STYLE SHEET :
+Browser default style sheets are the default styles that are applied to HTML elements by web browsers.
+/*^ 6. USER STYLE SHEET :
+User style sheets are CSS styles that are defined by the user and applied to web pages using browser extensions or user settings.*/
+/*^ 7. AUTHOR STYLE SHEET :
+Author style sheets are CSS styles that are defined by the author of a web page and applied to the page using inline styles, 
+internal style sheets, or external style sheets.*/
+/*^ 8. USER AGENT STYLE SHEET :
+User agent style sheets are the default styles that are applied to HTML elements by web browsers. They are similar to 
+browser default style sheets, but they can be overridden by user-defined styles or author-defined styles.
+/*^ 9. SPECIFICITY :
+Specificity is a measure of how specific a CSS selector is in targeting an HTML element.
+/*^ 10. INHERITANCE :
+Inheritance is a mechanism in CSS that allows certain properties of an HTML element to be inherited by its child elements. 
+This means that if a parent element has a certain style applied to it, its child elements will also inherit that style unless 
+they have their own styles defined. Inheritance is an important aspect of CSS, as it allows for more efficient and consistent 
+styling of web pages. By using inheritance effectively, designers can create web pages that are both visually appealing and 
+functional across a wide range of devices and screen sizes. Additionally, understanding inheritance can help ensure that web 
+pages are accessible to users with different visual impairments, as they can adjust the styles based on their preferences. 
+Overall, understanding inheritance is essential for creating effective and responsive web designs that meet the needs of users 
+and enhance the overall user experience.*/
+/*^ 11. CASCADING :
+Cascading is a mechanism in CSS that determines how styles are applied to HTML elements when multiple styles are defined for 
+the same element. It is based on the principle of "cascading", where styles are applied in a hierarchical manner, with more 
+specific styles taking precedence over less specific styles. The cascading order is determined by the specificity of the selectors 
+used to target the element, as well as the order in which the styles are defined in the CSS file. When multiple styles are defined 
+for the same element, the style with the highest specificity will be applied. If two styles have the same specificity, the style that
+is defined last in the CSS file will be applied. It is important for web designers and developers to understand cascading and how 
+to use it effectively to create responsive and visually appealing web pages. By using specific selectors and organizing CSS styles 
+in a logical manner, designers can ensure that the desired styles are applied to the correct elements and that the overall design 
+of the web page is consistent and visually appealing. Additionally, understanding cascading can help prevent conflicts between styles
+and ensure that the web page is accessible to users with different visual impairments, as they can adjust the styles based on their
+preferences. Overall, understanding cascading is essential for creating effective and responsive web designs that meet the needs 
+of users and enhance the overall user experience.*/
+/*^ 12. IMPORTANCE :
+The importance of CSS priority, specificity, inheritance, and cascading cannot be overstated in web design and development. 
+These concepts are essential for creating responsive and visually appealing web pages that meet the needs of users and enhance 
+the overall user experience. By understanding how CSS styles are applied to HTML elements, designers can create web pages that are 
+both functional and aesthetically pleasing across a wide range of devices and screen sizes. Additionally, understanding these 
+concepts can help prevent conflicts between styles and ensure that web pages are accessible to users with different visual 
+impairments, as they can adjust the styles based on their preferences. Overall, understanding CSS priority, specificity, inheritance,
+and cascading is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall 
+user experience.*/
+
+
+/*! THIS IS THE END OF CHAPTER 1 OF CSS. IN THIS CHAPTER WE HAVE LEARNT ABOUT THE FOLLOWING TOPICS :
+1. INTRODUCTION TO CSS
+2. TYPES OF CSS
+3. CSS SYNTAX
+4. CSS SELECTORS
+5. CSS PROPERTIES
+6. CSS UNITS
+7. CSS PRIORITY
+8. CSS INHERITANCE
+9. CSS CASCADING
+10. CSS IMPORTANCE
+
+/*^ NOTE : IN THIS CHAPTER WE HAVE LEARNT ABOUT THE BASIC CONCEPTS OF CSS. IN THE UPCOMING CHAPTERS WE WILL LEARN ABOUT THE ADVANCED CONCEPTS OF CSS. */
