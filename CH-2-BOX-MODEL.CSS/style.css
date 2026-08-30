@@ -63,3 +63,34 @@ h1 {
 /* if we have to create a circle using css or html, then we have to set border radius around the element to 50% */
 
 /*^ padding in box model :*/
+
+div {
+    padding-left: 20px; /* Sets the padding around the content of the box to 20 pixels */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    padding: 20px; /* Sets the padding around the content of the box to 20 pixels it will set top, 
+    right, bottom, and left */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    padding: 20px 40px; /* Sets the padding around the content of the box to 20 pixels on top and bottom, and 40 pixels on left and right */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    padding-right: 40px 60px; /* Sets the padding around the content of the box to 20 pixels on top, 40 pixels on right, 60 pixels on bottom, and 80 pixels on left */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    padding-bottom: 20px ; /* Sets the padding around the content of the box to 20 pixels on top, 40 pixels on right and left, and 60 pixels on bottom */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    padding-top: 20px; /* Sets the padding around the content of the box to 20 pixels on top, 40 pixels on right and left, and 60 pixels on bottom */
+    background-color: lightblue; /* Sets the background color of the box */
+}
