@@ -94,3 +94,183 @@ div {
     padding-top: 20px; /* Sets the padding around the content of the box to 20 pixels on top, 40 pixels on right and left, and 60 pixels on bottom */
     background-color: lightblue; /* Sets the background color of the box */
 }
+
+/*^ Margin in box model :*/
+
+div {
+    margin: 20px; /* Sets the margin around the box to 20 pixels on all sides */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    margin-top: 20px 40px; /* Sets the margin around the box to 20 pixels on top and bottom, and 40 pixels on left and right */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    margin-right: 20px 40px; /* Sets the margin around the box to 20 pixels on top, 40 pixels on right, 60 pixels on bottom, and 80 pixels on left */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    margin-bottom: 20px; /* Sets the margin around the box to 20 pixels on top, 40 pixels on right and left, and 60 pixels on bottom */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    margin-left: 20px; /* Sets the margin around the box to 20 pixels on top, 40 pixels on right and left, and 60 pixels on bottom */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+
+/*& DISPLAY PROPERTY : 
+The display property specifies the display behavior (the type of rendering box) of an element.
+
+1. inline : The element will be displayed as an inline element (like <span>).
+2. block : The element will be displayed as a block element (like <div>).
+3. inline-block : The element will be displayed as an inline-level block container.
+4. none : The element will not be displayed at all (it will have no effect on layout; 
+descendants are not displayed either).
+5. visibility : Controls the visibility of an element. */
+
+/*^ inline display property :*/
+
+div {
+    display: inline; /* Sets the display property of the box to inline */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+button {
+    display: inline; /* Sets the display property of the box to inline */
+    background-color: lightblue; /* Sets the background color of the box */ 
+}
+
+/*^ block display property :*/
+
+div {
+    display: block; /* Sets the display property of the box to block */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+button {
+    display: block; /* Sets the display property of the box to block */
+    background-color: lightblue; /* Sets the background color of the box */ 
+}
+
+/*^ inline-block display property :*/
+
+div {
+    display: inline-block; /* Sets the display property of the box to inline-block */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+button {
+    display: inline-block; /* Sets the display property of the box to inline-block */
+    background-color: lightblue; /* Sets the background color of the box */ 
+}
+
+/*^ none display property :*/
+
+div1 {
+    display: none; /* Sets the display property of the box to none */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+button {
+    display: none; /* Sets the display property of the box to none */
+    background-color: lightblue; /* Sets the background color of the box */ 
+}
+
+/*^ visibility property :
+The visibility property specifies whether an element is visible or not.
+1. visible : The element is visible (default).
+2. hidden : The element is hidden (but still takes up space in the layout).
+3. collapse : For table rows, columns, column groups, and row groups, this value removes the element from display,
+but it does not affect the layout of the table. For other elements, this value behaves like hidden. */
+
+div2 {
+    visibility: visible; /* Sets the visibility property of the box to visible */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+/*& Alpha Channel :
+The alpha channel is a component of a color that represents its transparency. It is often used in computer graphics and 
+digital imaging to control the opacity of an image or a color. The alpha channel is typically represented as a value between 
+0 and 1, where 0 represents full transparency (completely see-through) and 1 represents full opacity (completely solid). */
+
+/*^ rgba() function in CSS :
+The rgba() function in CSS is used to define colors with an alpha channel, allowing you to specify the opacity of a color. 
+The function takes four parameters: red, green, blue, and alpha. The first three parameters (red, green, and blue) 
+define the color using the RGB color model, while the fourth parameter (alpha) defines the opacity of the color. 
+The alpha value can range from 0 (fully transparent) to 1 (fully opaque). */
+
+div {
+    background-color: rgba(255, 0, 0, 0.5); /* Sets the background color of the box to red with 50% opacity */
+}
+
+div {
+    background-color: rgba(0, 255, 0, 1.0); /* Sets the background color of the box to green with 100% opacity */
+}
+
+div {
+    background-color: rgba(0, 0, 255, 0.2); /* Sets the background color of the box to blue with 20% opacity */
+}
+
+div {
+    background-color: rgba(255, 255, 0, 0.75); /* Sets the background color of the box to yellow with 75% opacity */
+}
+
+/*& RELATIVE UNITS IN CSS :
+1.percentage (%) : The percentage unit is relative to the parent element's size. For example, if you set the width of an 
+element to 50%, it will take up half the width of its parent element.
+
+2. ems (em) : The em unit is relative to the font size of the element. For example, if the font size of an element is 16px,
+1em is equal to 16px. If you set the width of an element to 2em, it will be twice the font size of the element.
+
+3.rems (rem) : The rem unit is relative to the font size of the root element (usually the <html> element). For example, 
+if the font size of the root element is 16px, 1rem is equal to 16px. If you set the width of an element to 2rem, 
+it will be twice the font size of the root element.*/
+
+/*^ percentage unit in CSS :*/
+
+div {
+    width: 50%; /* Sets the width of the box to 50% of its parent element's width */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    height: 50%; /* Sets the height of the box to 50% of its parent element's height */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+/* here the sign of % is used in both div's to set the width and height of the box relative to its parent element's size. */
+
+/*^ em unit in CSS :*/
+
+div {
+    width: 2em; /* Sets the width of the box to 2 times the font size of the element */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+div {
+    height: 2em; /* Sets the height of the box to 2 times the font size of the element */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+/* here the sign of em is used in both div's to set the width and height of the box relative to the font size of the element. */
+
+/*^ rem unit in CSS :*/
+
+#box2 {
+    width: 2rem; /* Sets the width of the box to 2 times the font size of the root element */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+#box1 {
+    height: 2rem; /* Sets the height of the box to 2 times the font size of the root element */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+/* here the sign of rem is used in both div's to set the width and height of the box relative to the font size of the root 
+element. */
+
+
+
+
