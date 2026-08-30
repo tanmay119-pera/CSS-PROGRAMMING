@@ -380,3 +380,87 @@ web pages that enhance the user experience.*/
 P111{
     font-family: "Brush Script MT", cursive; /* p element will have Brush Script MT font */
 }
+
+/*^ 5. FANTASY :
+Fantasy fonts are characterized by their decorative and imaginative style. They are often used for creative and artistic purposes and can add a unique 
+and playful touch to web content. Examples of fantasy fonts include Papyrus, Jokerman, and Curlz MT. Fantasy fonts are often used for headings, logos, 
+and other decorative text, as they can create a visually striking and memorable look. However, they may not be as effective for body text, 
+as they can be more difficult to read in long passages of text. It is important for web designers and developers to consider the context in which the font will be
+used and to choose a font that is appropriate for the intended audience and medium. By using fantasy fonts effectively, designers can create visually appealing and 
+easy-to-read web pages that enhance the user experience.*/
+
+p{
+    font-family: "Papyrus", fantasy; /* p element will have Papyrus font */
+}
+
+/*& UNIT IN CSS :
+In CSS, units are used to specify the size and dimensions of elements on a web page. There are several types of units in CSS, including absolute units, relative units, and percentage units.
+Absolute units are fixed and do not change based on the size of the viewport or parent element. Examples of absolute units include pixels (px), points (pt), and inches (in). Relative units, on the other hand, are based on the size of the parent element or the viewport. Examples of relative units include em, rem, and vw/vh. Percentage units are also relative and are based on the size of the parent element. For example, if an element has a width of 50%, it will take up half the width of its parent element.
+It is important for web designers and developers to understand the different types of units in CSS and how to use them effectively to create responsive and visually appealing web pages. By using the appropriate units for different elements and layouts, designers can create web pages that adapt to different screen sizes and devices, enhancing the user experience. Additionally, using relative and percentage units can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the size of elements based on the user's preferences.
+as a best practice, it is recommended to use relative and percentage units whenever possible, as they provide greater flexibility and adaptability for web design. By using a combination of absolute, relative, and percentage units, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Overall, understanding the different types of units in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+/*^ 1. PIXELS (PX) :
+Pixels are a fixed unit of measurement that represent a single point on a screen. They are commonly used in web design to specify the size of elements, such as fonts, images, and containers. Pixels are a reliable and consistent unit of measurement, as they do not change based on the size of the viewport or parent element. However, they may not be the best choice for responsive design, as they do not adapt to different screen sizes and resolutions. It is important for web designers and developers to consider the context in which pixels are used and to choose the appropriate unit of measurement for different elements and layouts. By using pixels effectively, designers can create visually appealing and functional web pages that meet the needs of users and enhance the overall user experience. Additionally, using pixels in combination with other units, such as relative and percentage units, can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the size of elements based on the user's preferences. Overall, understanding the use of pixels in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+p{
+    font-size: 16px; /* p element will have font size of 16px */
+}
+
+#id{
+    font-size: 20px; /* element with id "id" will have font size of 20px */
+}
+
+.class{
+    font-size: 14px; /* elements with class "class" will have font size of 14px */
+}
+
+/*^ 2. EM :
+The em unit is a relative unit of measurement that is based on the font size of the parent element. One em is equal to the current font size of the parent element. For example, if the font size of the parent element is 16px, then 1em is equal to 16px. The em unit is commonly used in web design to specify the size of fonts,
+margins, padding, and other elements. It is a flexible and scalable unit of measurement, as it adapts to the font size of the parent element. However, it can also be complex to use, as the size of elements can be affected by the font size of their parent elements. It is important for web designers and developers to understand the use of em units in CSS and how to use them effectively to create responsive and visually appealing web pages. By using em units in combination with other units, such as pixels and percentage units, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, using em units can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the size of elements based on the user's preferences. Overall, understanding the use of em units in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+p{
+    font-size: 1.5em; /* p element will have font size of 1.5em */
+}
+
+#id{
+    font-size: 2em; /* element with id "id" will have font size of 2em */
+}
+
+.class{
+    font-size: 1.2em; /* elements with class "class" will have font size of 1.2em */
+}
+
+/*& line - height :
+The line-height property is used to set the amount of space between lines of text in an HTML element. It can take several values, including normal, a specific length (in pixels, ems, or percentages), or a unitless number that is multiplied by the font size of the element.
+The line-height property is an important aspect of web design, as it can greatly affect the readability and visual appeal of text on a web page. By adjusting the line height, designers can create a more comfortable reading experience for users, especially for long passages of text. It is important for web designers and developers to understand the use of the line-height property in CSS and how to use it effectively to create responsive and visually appealing web pages. By using the line-height property in combination with other properties, such as font size and font family, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, using appropriate line heights can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the spacing between lines of text based on their preferences. Overall, understanding the use of the line-height property in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+p{
+    line-height: 1.5; /* p element will have line height of 1.5 */
+}
+
+#id{
+    line-height: 2px; /* element with id "id" will have line height of 2px */
+}
+
+.class{
+    line-height: normal; /* elements with class "class" will have line height of normal */
+}
+
+/*& text-transform :
+The text-transform property is used to control the capitalization of text in an HTML element. It can take several values, including none, capitalize, uppercase, and lowercase. The none value leaves the text unchanged, while the capitalize value capitalizes the first letter of each word. The uppercase value converts all letters to uppercase, and the lowercase value converts all letters to lowercase. The text-transform property is an important aspect of web design, as it can greatly affect the readability and visual appeal of text on a web page. By using the text-transform property effectively, designers can create a more visually appealing and consistent appearance for text on a web page. It is important for web designers and developers to understand the use of the text-transform property in CSS and how to use it effectively to create responsive and visually appealing web pages. By using the text-transform property in combination with other properties, such as font size and font family, designers can create web pages that are both visually appealing and functional across a wide range of devices and screen sizes. Additionally, using appropriate text transformations can help ensure that web pages are accessible to users with different visual impairments, as they can adjust the capitalization of text based on their preferences. Overall, understanding the use of the text-transform property in CSS is essential for creating effective and responsive web designs that meet the needs of users and enhance the overall user experience.*/
+
+p{
+    text-transform: uppercase; /* p element will have uppercase text */
+}
+
+.class{
+    text-transform: lowercase; /* elements with class "class" will have lowercase text */
+}
+
+#id{
+    text-transform: capitalize; /* element with id "id" will have capitalized text */
+}
+
+P2{
+    text-transform: none; /* p element will have no text transformation */
+}
