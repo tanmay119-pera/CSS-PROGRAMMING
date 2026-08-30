@@ -1,0 +1,65 @@
+/*&                                            CHAPTER 2 - BOX MODEL IN CSS                                                   */
+
+/* BOX MODEL : Every element in CSS is a box. The box model describes the rectangular boxes that are generated for elements 
+in the document tree and how they interact with each other. */
+
+/* BASIC BOX MODEL : 
+1. Height : The height of the box, which is the distance from the top to the bottom of the box.
+2. Width : The width of the box, which is the distance from the left to the right of the box.
+3. Content : The content of the box, where text and images appear
+4. Padding : Clears an area around the content. The padding is transparent.
+5. Border : A border that goes around the padding and content.
+6. Margin : Clears an area outside the border. The margin is transparent. */
+
+/*! NOTE - we can also use inspector tool in browse to check the box model properties and values 
+(just right click on the element and select "Inspect"). */
+
+/*^ Height in box model :*/
+
+div {
+    height: 100px; /* Sets the height of the box to 100 pixels */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+/*^ Width in box model :*/
+
+div {
+    width: 200px; /* Sets the width of the box to 200 pixels */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+/*^ border in box model :*/
+
+div {
+    border: 5px solid black; /* Sets a solid black border of 5 pixels around the box */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+h1 {
+    border-color: black; /* Sets the color of the border around the heading */
+    border-width: 2px; /* Sets the width of the border around the heading */
+    border-style: solid; /* Sets the style of the border around the heading */
+    background-color: lightyellow; /* Sets the background color of the heading */
+    text-align: center; /* Centers the text horizontally within the heading */
+}
+
+/* or we can also use the shorthand property for border as follows : */
+
+h1 {
+    border: 2px solid black; /* Sets a solid black border of 2 pixels around the heading */
+    /* This is known as the shorthand property */
+    background-color: lightyellow; /* Sets the background color of the heading */
+    text-align: center; /* Centers the text horizontally within the heading */
+}
+
+h1 {
+    border-radius: 2px; /* Sets the border radius to 10 pixels, creating rounded corners */
+}
+
+h1 {
+    border-radius: 50%; /* Sets the border radius to 50%, creating a circular shape */
+}
+
+/* if we have to create a circle using css or html, then we have to set border radius around the element to 50% */
+
+/*^ padding in box model :*/
