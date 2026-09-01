@@ -134,18 +134,22 @@ div{
 
 #box1{
     background-color: lightcoral;
+    flex-shrink: 1;/* in this case the flex items will shrink to fit the flex container. */
 }
 
 #box2{
     background-color: lightblue;
+    flex-grow: 1;/* in this case the flex items will grow to fill the flex container. */
 }
 
 #box3{
     background-color: lightgreen;
+    flex-basis: 100px;/* in this case the flex items will have a base size of 100px. */
 }
 
 #box4{
     background-color: lightyellow;
+    
 }
 
 #box5{
