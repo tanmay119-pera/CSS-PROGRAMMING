@@ -449,4 +449,53 @@ The image can be a local file or an image hosted on a web server. The background
     you can select file form browser and just paste the path or drag and drop it into the vsc code editor */
 }
 
-/*back gr
+/*& BACKGROUND-SIZE PROPERTY IN CSS :
+The background-size property in CSS is used to specify the size of the background image. It allows you to control how the 
+background image is scaled and displayed within the element. The property can take several values, including:
+
+1. auto : The default value. The background image retains its original size.
+
+2. cover : The background image is scaled to cover the entire element, while maintaining its aspect ratio. 
+This may cause some parts of the image to be cropped.
+
+3. contain : The background image is scaled to fit within the element, while maintaining its aspect ratio. 
+The entire image will be visible, but there may be empty space around it.
+
+4. length values : You can specify specific width and height values for the background image using length units 
+(e.g., px, em, %, etc.).*/
+
+/*^ auto value in background-size property :*/
+
+#box1 {
+    background-image: url('image.jpg'); /* Sets the background image of the box to 'image.jpg' */
+    background-size: auto; /* The background image retains its original size */
+    width: 300px; /* Sets the width of the box */
+    height: 200px; /* Sets the height of the box */
+}
+
+/*^ cover value in background-size property :*/
+
+#box2 {
+    background-image: url('image.jpg'); /* Sets the background image of the box to 'image.jpg' */
+    background-size: cover; /* The background image is scaled to cover the entire element */
+    width: 300px; /* Sets the width of the box */
+    height: 200px; /* Sets the height of the box */
+}
+
+/*^ contain value in background-size property :*/
+
+#box3 {
+    background-image: url('image.jpg'); /* Sets the background image of the box to 'image.jpg' */
+    background-size: contain; /* The background image is scaled to fit within the element */
+    width: 300px; /* Sets the width of the box */
+    height: 200px; /* Sets the height of the box */
+}
+
+/*^ length values in background-size property :*/
+
+#box4 {
+    background-image: url('image.jpg'); /* Sets the background image of the box to 'image.jpg' */
+    background-size: 150px 100px; /* The background image is scaled to 150 pixels wide and 100 pixels tall */
+    width: 300px; /* Sets the width of the box */
+    height: 200px; /* Sets the height of the box */
+}
