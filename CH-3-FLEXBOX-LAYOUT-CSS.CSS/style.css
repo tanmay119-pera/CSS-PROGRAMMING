@@ -191,5 +191,15 @@ between 601px and 1024px. This is useful for creating responsive designs that lo
 }
 /*width: 1025px means that the styles inside this media query will be applied to screens that are 1025px. This is useful for creating responsive designs that look good on all devices.*/
 
+@media(min-width: 1441px) and (max-width: 1440px) {
+    #container {
+        flex-direction: row; /* in this case the flex items will be arranged in a row instead of a column. */
+    }
+}
+/*min-width: 1441px means that the styles inside this media query will be applied to screens that are 1441px or larger. 
+This is useful for creating responsive designs that look good on all devices.*/
+
+/*!NOTE - This is the end of the CH-3-FLEXBOX-LAYOUT-CSS file. You can add more styles to this file as per your requirement. */
+
 
 
