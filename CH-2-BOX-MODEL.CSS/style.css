@@ -472,6 +472,7 @@ The entire image will be visible, but there may be empty space around it.
     width: 300px; /* Sets the width of the box */
     height: 200px; /* Sets the height of the box */
 }
+/* here priority of background-size property is cover > contain > length values > auto */
 
 /*^ cover value in background-size property :*/
 
@@ -481,6 +482,7 @@ The entire image will be visible, but there may be empty space around it.
     width: 300px; /* Sets the width of the box */
     height: 200px; /* Sets the height of the box */
 }
+/* here priority of background-size property is cover > contain > length values > auto */
 
 /*^ contain value in background-size property :*/
 
@@ -490,6 +492,7 @@ The entire image will be visible, but there may be empty space around it.
     width: 300px; /* Sets the width of the box */
     height: 200px; /* Sets the height of the box */
 }
+/* here priority of background-size property is cover > contain > length values > auto */
 
 /*^ length values in background-size property :*/
 
@@ -499,3 +502,4 @@ The entire image will be visible, but there may be empty space around it.
     width: 300px; /* Sets the width of the box */
     height: 200px; /* Sets the height of the box */
 }
+/* here priority of background-size property is cover > contain > length values > auto */
