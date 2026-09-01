@@ -413,6 +413,40 @@ z-index values can be positive, negative, or zero. Elements with a higher z-inde
 elements with a lower z-index value. If two elements have the same z-index value, their stacking order will be determined 
 by their order in the HTML document (the later element will be displayed in front of the earlier one). */
 
+div {
+    position: absolute; /* Sets the position of the box to absolute */
+    z-index: 1; /* Sets the z-index of the box to 1 */
+    background-color: lightblue; /* Sets the background color of the box */
+}
 
+#box1 {
+    position: absolute; /* Sets the position of the box to absolute */
+    z-index: 2; /* Sets the z-index of the box to 2 */
+    background-color: lightgreen; /* Sets the background color of the box */
+}
 
+#box2 {
+    position: absolute; /* Sets the position of the box to absolute */
+    z-index: 3; /* Sets the z-index of the box to 3 */
+    background-color: lightcoral; /* Sets the background color of the box */
+}
 
+#box3 {
+    position: absolute; /* Sets the position of the box to absolute */
+    z-index: -1; /* Sets the z-index of the box to -1 */
+    background-color: lightgoldenrodyellow; /* Sets the background color of the box */
+}
+
+/*when the property is static, then the z-index property will not work. The z-index property only works on elements that have 
+a position value other than static (e.g., relative, absolute, fixed, or sticky). */
+
+/*& BACK-GROUND IMAGE IN CSS :
+The background-image property in CSS is used to set an image as the background of an element.
+The image can be a local file or an image hosted on a web server. The background-image property can be used to create visually appealing designs and layouts for web pages. */
+
+#box1 {
+    background-image: url('image.jpg'); /* Sets the background image of the box to 'image.jpg'
+    you can select file form browser and just paste the path or drag and drop it into the vsc code editor */
+}
+
+/*back gr
