@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📦 Cascading Style Sheets (CSS) - Chapter 2: The CSS Box Model & Layouts
+# 📦 Cascading Style Sheets (CSS) - CHAPTER 2: THE CSS BOX MODEL & LAYOUT
 ### *A Visual, Comprehensive Guide to the Box Model, Positioning, Display Modes & Responsive Units*
 
 <br/>
