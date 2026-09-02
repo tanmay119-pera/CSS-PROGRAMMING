@@ -466,4 +466,305 @@ CSS-FILE
     border: 2px solid black; /* Border added to all divs */
 }
 
+=======================================================================================================================================================================================
 
+PROBLEM - 3 Add a different background color to each div with an opacity of 0.5.
+
+CSS - FILE 
+
+/* 
+   Practice Set 4 - Q3: 
+   Add a different background color to each div with an opacity of 0.5*/
+
+.box1 {
+    background-color: rgba(255, 0, 0, 0.5); /* Red with 0.5 opacity */
+}
+
+.box2 {
+    background-color: rgba(0, 128, 0, 0.5); /* Green with 0.5 opacity */
+}
+
+.box3 {
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with 0.5 opacity} */
+
+==========================================================================================================================================================================
+
+PROBLEM - 4 (Complete Layout): Give the content area an appropriate height.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 4 - Complete Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">amazon.in</a>
+            <a href="#" class="nav-link">Account</a>
+            <a href="#" class="nav-link">My Cart</a>
+            <a href="#" class="nav-link">Contact Us</a>
+            <div class="nav-search">
+                <input type="text" placeholder="search Amazon.in">
+                <button type="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amazon Replica Footer</p>
+    </footer>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 4 - Q4: 
+   Give the content area an appropriate height.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.nav-logo {
+    color: #f08804;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-search input {
+    height: 30px;
+}
+
+.nav-search button {
+    height: 30px;
+    background-color: #febd69;
+    border: none;
+}
+
+/* Setting an appropriate height for the content area */
+.content-area {
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: inline-block;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.box2 {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.box3 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+footer {
+    height: 60px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+==========================================================================================================================================================================================
+                                                  PRACTICE SET - E
+
+PROBLEM 1 - Create the following layout using the given html (Fixed position and z-index).
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5 - Positioning & z-index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <div class="fixed-box">Love Nature</div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit.
+    </p>
+    <p>
+        Vivamus adipiscing fermentum quam. Volutpat metus tristique eget. Sed ac dolor sit amet purus malesuada congue.
+        In hac habitasse platea dictumst. Curabitur mattis molestie malesuada. Phasellus vitae quam elit.
+    </p>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 5: 
+   Create the following layout using the given html:
+   • Give the div a height, width & some background image.
+   • Use the appropriate position property for the div element to place it at the right end of the page. (The div should not move even on scroll)
+   • Use z-index to place the div on top of page.
+
+   HTML given:
+   <p> lorem*5 </p>
+   <div> Love Nature </div>
+   <p> lorem*5 </p>
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.fixed-box {
+    /* Height & Width */
+    height: 150px;
+    width: 150px;
+
+    /* Background image with fallback color */
+    background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=300');
+    background-size: cover;
+    background-position: center;
+    background-color: #2e7d32;
+
+    /* Styling text */
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    /* Fixed position to stay at the right end of the page and not move on scroll */
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* z-index to place it on top of page content */
+    z-index: 999;
+}
+
+===================================================================================================================================================================================
+
+PROBLEM - 6 Create a navbar with 4 options in the form of anchor tags inside list items. Now, use flexbox to place them all spaced equally in a single line.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6 - Q1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 6 - Q1: 
+   Create a navbar with 4 options in the form of anchor tags inside list items.
+   Now, use flexbox to place them all spaced equally in a single line.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+/* Flexbox on the <ul> to space list items equally in a single line */
+.nav-list {
+    display: flex;
+    justify-content: space-evenly; /* Equally spaced */
+    align-items: center;
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+=============================================================================================================================================================================================
