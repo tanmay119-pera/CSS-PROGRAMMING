@@ -214,7 +214,6 @@ CSS - FILE
    Create one div inside another div.
    Set id & text "outer" for the first one & "inner" for the second one.
    Set the outer div text size to 25px & inner div text size to 10px.
-*/
 
 #outer {
     font-size: 25px;
@@ -232,7 +231,7 @@ CSS - FILE
 }
 
 ===================================================================================================================================================================
-                                                PRACTICE SET - C
+                                                PRACTICE SET - C 🚀
 
 PROBLEM - 1 Create a div with height & width of 100px. Set its background color to green & the border radius to 50%.
 
@@ -371,7 +370,7 @@ CSS - FILE
     background-color: #f3a847;
 }
 ===================================================================================================================================================================
-                                                 PROBLEM SET - D 
+                                                 PROBLEM SET - D 🚀
 
  PROBLEM - 1 Create a webpage layout with a header, a footer & a content area containing 3 divs (100px × 100px).
 
@@ -382,9 +381,8 @@ CSS - FILE
    Create a webpage layout with a header, a footer & a content area containing 3 divs.
    Set the height & width of divs to 100px.
    (add the previous navbar in the header)
-*/
 
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -532,9 +530,8 @@ CSS - FILE
 /* 
    Practice Set 4 - Q4: 
    Give the content area an appropriate height.
-*/
 
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -662,7 +659,6 @@ CSS - FILE
    <p> lorem*5 </p>
    <div> Love Nature </div>
    <p> lorem*5 </p>
-*/
 
 body {
     font-family: Arial, sans-serif;
@@ -732,9 +728,7 @@ CSS - FILE
    Practice Set 6 - Q1: 
    Create a navbar with 4 options in the form of anchor tags inside list items.
    Now, use flexbox to place them all spaced equally in a single line.
-*/
-
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -768,3 +762,409 @@ CSS - FILE
 }
 
 =============================================================================================================================================================================================
+
+PROBLEM - 2 Use flexbox to center one div inside another div.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6 - Q2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-box">
+            Centered Div
+        </div>
+    </div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 6 - Q2: 
+   Use flexbox to center one div inside another div.
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Outer div (Flex container) */
+.outer-container {
+    height: 400px;
+    width: 500px;
+    background-color: #2b3a42;
+    margin: 50px auto;
+    border: 2px solid #111;
+    border-radius: 10px;
+
+    /* Centering using Flexbox */
+    display: flex;
+    justify-content: center; /* Horizontally centered along main axis */
+    align-items: center;     /* Vertically centered along cross axis */
+}
+
+/* Inner div (Flex item) */
+.inner-box {
+    height: 120px;
+    width: 150px;
+    background-color: #4fba6f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+============================================================================================================================================================
+
+PROBLEM - 3 Which has higher priority - align-items or align-self?
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6 - Q3: align-items vs align-self</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which has higher priority: align-items or align-self?</h1>
+        <p class="answer"><strong>Answer:</strong> <code>align-self</code> has a higher priority because it overrides the container's <code>align-items</code> property for that individual flex item.</p>
+
+        <h2>Demonstration:</h2>
+        <div class="flex-container">
+            <div class="box default-item">align-items: flex-start</div>
+            <div class="box custom-item-center">align-self: center (Overrides!)</div>
+            <div class="box custom-item-end">align-self: flex-end (Overrides!)</div>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 6 - Q3: 
+   Question: Which has higher priority - align-items or align-self?
+
+   Answer & Explanation:
+   align-self has higher priority!
+   - align-items is defined on the flex container to set the default alignment along the cross axis for ALL child items.
+   - align-self is defined on an individual flex item to override the container's align-items value for that specific item.
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 30px;
+    background-color: #f7f9fc;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.answer {
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 12px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #4caf50;
+}
+
+/* Flex Container setting align-items: flex-start */
+.flex-container {
+    display: flex;
+    height: 300px;
+    background-color: #e0e0e0;
+    border: 2px dashed #777;
+    justify-content: space-around;
+    align-items: flex-start; /* Container sets default alignment to top */
+    padding: 10px;
+}
+
+.box {
+    width: 180px;
+    height: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* Follows container align-items: flex-start */
+.default-item {
+    background-color: #1976d2;
+}
+
+/* Overrides with align-self: center */
+.custom-item-center {
+    background-color: #e65100;
+    align-self: center; /* HIGHER PRIORITY than container's align-items */
+}
+
+/* Overrides with align-self: flex-end */
+.custom-item-end {
+    background-color: #388e3c;
+    align-self: flex-end; /* HIGHER PRIORITY than container's align-items */
+}
+
+================================================================================================================================================================================
+                                                 PRACTICE SET - F 
+
+PROBLEM - Add a media query to implement the following:
+
+The color of a div changes to green for viewport width less than 300px (< 300px).
+The color of a div changes to pink for width between 300px & 400px.
+The color of a div changes to red for width between 400px & 600px.
+The color of a div changes to blue for width above 600px (> 600px).
+
+HTML FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 7 - Media Queries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Media Query Practice</h1>
+        <p class="instruction">Resize the browser window to see the div color change!</p>
+        
+        <div class="responsive-box">
+            <span class="label">Responsive Box</span>
+        </div>
+
+        <div class="legend">
+            <p><strong>Breakpoints:</strong></p>
+            <ul>
+                <li>&lt; 300px: <span style="color: green; font-weight: bold;">Green</span></li>
+                <li>300px - 400px: <span style="color: #e91e63; font-weight: bold;">Pink</span></li>
+                <li>400px - 600px: <span style="color: red; font-weight: bold;">Red</span></li>
+                <li>&gt; 600px: <span style="color: blue; font-weight: bold;">Blue</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 7: 
+   Qs: Add a media query to implement the following:
+   • The color of a div changes to green for viewport width less than 300px
+   • The color of a div changes to pink for width between 300px & 400px
+   • The color of a div changes to red for width between 400px & 600px
+   • The color of a div changes to blue for width above 600px
+
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.instruction {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 1. Default state: Viewport width less than 300px (< 300px) */
+.responsive-box {
+    width: 150px;
+    height: 150px;
+    background-color: green; /* Green by default */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+/* 2. Viewport width between 300px and 400px (Pink) */
+@media (min-width: 300px) and (max-width: 400px) {
+    .responsive-box {
+        background-color: pink;
+        color: #333; /* Darker text for contrast on light pink */
+    }
+}
+
+/* 3. Viewport width between 400px and 600px (Red) */
+@media (min-width: 401px) and (max-width: 600px) {
+    .responsive-box {
+        background-color: red;
+        color: white;
+    }
+}
+
+/* 4. Viewport width above 600px (> 600px) (Blue) */
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: blue;
+        color: white;
+    }
+}
+
+/* Legend styling */
+.legend {
+    margin-top: 15px;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    font-size: 13px;
+}
+
+.legend ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.legend li {
+    padding: 2px 0;
+}
+
+=================================================================================================================================================================
+                                            PRATICE SET - G 
+                
+PROBLEM - Create a simple loader using CSS
+
+Step 1: Create a div with circular shape & a thick border from one end (top/bottom/left/right).
+Step 2: To make it spin, create an animation which transforms it from 0deg to 360deg.
+Step 3: Add the animation property to the loader with infinite duration.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 8 - CSS Loader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CSS Spinner / Loader</h2>
+        <div class="loader"></div>
+        <p>Loading, please wait...</p>
+    </div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 8: 
+   Qs: Create a simple loader using CSS
+   
+   Step 1: Create a div with circular shape & a thick border from one end (top/bottom/left/right)
+   Step 2: To make it spin, create an animation which transforms it from 0deg to 360deg
+   Step 3: Add the animation property to the loader with infinite duration*/
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Step 1: Div with circular shape & thick border from one end */
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(255, 255, 255, 0.2); /* Base circle border */
+    border-top: 10px solid #38bdf8;             /* Thick border at the top */
+    border-radius: 50%;                         /* 50% radius makes it circular */
+
+    /* Step 3: Add animation property with infinite duration */
+    animation: spin 1s linear infinite;
+}
+
+/* Step 2: Animation transforming from 0deg to 360deg */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
