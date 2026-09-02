@@ -608,7 +608,7 @@ footer {
 }
 
 ==========================================================================================================================================================================================
-                                                  PRACTICE SET - E
+                                                  PRACTICE SET - E 🚀
 
 PROBLEM 1 - Create the following layout using the given html (Fixed position and z-index).
 
@@ -940,7 +940,7 @@ h1 {
 }
 
 ================================================================================================================================================================================
-                                                 PRACTICE SET - F 
+                                                 PRACTICE SET - F 🚀
 
 PROBLEM - Add a media query to implement the following:
 
@@ -1086,7 +1086,7 @@ h1 {
 }
 
 =================================================================================================================================================================
-                                            PRATICE SET - G 
+                                            PRATICE SET - G 🚀
                 
 PROBLEM - Create a simple loader using CSS
 
@@ -1168,3 +1168,10 @@ body {
         transform: rotate(360deg);
     }
 }
+
+================================================================================================================================================================
+                                                      NOTE 🚀
+
+THIS IS END OF YOUR PRACTICE SETS AND HOPE YOU ENJOYED AND LEARNT MANY THING. IF YOU REALLY LIKE THIS SERIES DROP A STAR 
+
+- tanmay119-pera
