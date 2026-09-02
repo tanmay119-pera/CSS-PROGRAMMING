@@ -16,7 +16,8 @@ code editor to see the final results.
 
 Author: 
 Adesh Srivastava (Tanmay) [tanmay119-pera]
-==========================================================================================================================================
+=================================================================================================================================================
+                                                    PRACTICE SET - A 🚀
 
 PROBLEM 1.
 Create a simple div with an id "box". add some text content inside the div.
@@ -115,3 +116,151 @@ button {
 }
 /* in this case it will take the color from the internal css file because it has more priority than external css file */
 =================================================================================================================================================
+                                            PRACTICE SET - B 🚀
+
+PROBLEM 1: Create a heading centred on the page with all of its text capitalized by default.    
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 2 - Q1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>welcome to my website</h1>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 2 - Q1: 
+   Create a heading centred on the page with all of its text capitalized by default.*/
+
+h1 {
+    text-align: center;
+    text-transform: uppercase; /* Use 'uppercase' to capitalize all letters, or 'capitalize' for capitalizing the first letter of each word */
+}
+
+=================================================================================================================================================================
+
+PROBLEM 2 - Set the font family of all the content in the document to "Times New Roman".
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 2 - Q2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Heading with Times New Roman</h1>
+    <p>This is a paragraph where all the text inside the document is formatted using the "Times New Roman" font family.</p>
+    <button>Click Me</button>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 2 - Q2: 
+   Set the font family of all the content in the document to "Times New Roman".*/
+
+ {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Or alternatively on body:
+body {
+    font-family: "Times New Roman", Times, serif;
+} */
+
+================================================================================================================================================================================================
+
+PROBLEM 3 - Create one div inside another div. Set id & text "outer" for the first one & "inner" for the second one. 
+Set the outer div text size to 25px & inner div text size to 10px.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 2 - Q3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outer">
+        outer
+        <div id="inner">
+            inner
+        </div>
+    </div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 2 - Q3: 
+   Create one div inside another div.
+   Set id & text "outer" for the first one & "inner" for the second one.
+   Set the outer div text size to 25px & inner div text size to 10px.
+*/
+
+#outer {
+    font-size: 25px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+#inner {
+    font-size: 10px;
+    background-color: #d1e7dd;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px dashed #0f5132;
+}
+
+===================================================================================================================================================================
+                                                PRACTICE SET - C
+
+PROBLEM - 1 Create a div with height & width of 100px. Set its background color to green & the border radius to 50%.
+
+HTML - FILE 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 3 - Q1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="circle-box"></div>
+</body>
+</html>
+
+CSS - FILE 
+
+/* 
+   Practice Set 3 - Q1: 
+   Create a div with height & width of 100px.
+   Set its background color to green & the border radius to 50%.*/
+
+#circle-box {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
