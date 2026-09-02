@@ -131,3 +131,238 @@ div{
     50% {background-color: yellow;} /* This means that at the midpoint of the animation (50%), the background color will be yellow. */
     100% {background-color: green;} /* This means that at the end of the animation (100%), the background color will be green. */
 }
+
+/*& PSEUDO ELEMENTS IN CSS :
+- Pseudo-elements are used to style specific parts of an element.
+- They are used to create special effects on elements.
+- Pseudo-elements are specified using a double colon (::) followed by the name of the pseudo-element.
+- The most commonly used pseudo-elements are ::before and ::after, which are used to insert content before or after an element's content.
+- Other pseudo-elements include ::first-letter, ::first-line, ::selection, and ::placeholder.
+- Pseudo-elements can be used to create custom styles for elements, such as adding decorative elements, creating custom bullets for lists, or styling the first letter or line of a paragraph. */
+
+
+/* the ::before and ::after pseudo-elements are used to insert content before or after an element's content. 
+   The ::first-letter pseudo-element is used to style the first letter of an element's content. 
+   The ::first-line pseudo-element is used to style the first line of an element's content. 
+   The ::selection pseudo-element is used to style the selected text of an element. 
+   The ::placeholder pseudo-element is used to style the placeholder text of an input element. */
+
+/*^ Example of pseudo-elements */
+
+div::before{
+    content: "Before"; /* This means that the text "Before" will be inserted before the content of the div element. */
+    color: red; /* This means that the text "Before" will be red in color. */
+    font-size: 20px; /* This means that the text "Before" will have a font size of 20 pixels. */
+}
+
+div::after{
+    content: "After"; /* This means that the text "After" will be inserted after the content of the div element. */
+    color: blue; /* This means that the text "After" will be blue in color. */
+    font-size: 20px; /* This means that the text "After" will have a font size of 20 pixels. */
+}
+
+div::first-letter{
+    color: green; /* This means that the first letter of the content of the div element will be green in color. */
+    font-size: 30px; /* This means that the first letter of the content of the div element will have a font size of 30 pixels. */
+}
+
+div::first-line{
+    color: purple; /* This means that the first line of the content of the div element will be purple in color. */
+    font-size: 25px; /* This means that the first line of the content of the div element will have a font size of 25 pixels. */
+}
+
+div::selection{
+    background-color: yellow; /* This means that the background color of the selected text in the div element will be yellow. */
+    color: black; /* This means that the color of the selected text in the div element will be black. */
+}
+
+div::placeholder{
+    color: gray; /* This means that the placeholder text in the input element will be gray in color. */
+    font-size: 15px; /* This means that the placeholder text in the input element will have a font size of 15 pixels. */
+}
+
+/*& CSS VARIABLES :
+- CSS variables are used to store values that can be reused throughout a stylesheet.
+- They are defined using the -- prefix and can be accessed using the var() function.
+- CSS variables can be defined in the :root selector to make them global, or they can be defined in a specific selector to make them local.
+- CSS variables can be used to store colors, font sizes, spacing values, and other properties that are used multiple times in a stylesheet.
+- CSS variables can be updated dynamically using JavaScript, allowing for more flexible and interactive designs. */
+
+#box1 {
+    --box-color: red; /* This means that the variable --box-color is defined with the value red. */
+    background-color: var(--box-color); /* This means that the background color of the box1 element will be red. */
+}
+
+div {
+    --box-color: blue; /* This means that the variable --box-color is defined with the value blue. */
+    background-color: var(--box-color); /* This means that the background color of the div element will be blue. */
+}
+
+/*& CSS CLIP-PATH :
+- The clip-path property is used to create a clipping region for an element, which defines the visible portion of the element.
+- It can be used to create various shapes, such as circles, ellipses, polygons, and more.
+- The clip-path property can take various values, including predefined shapes, SVG paths, and the inset() function.
+- The clip-path property can be animated using CSS animations and transitions, allowing for dynamic and interactive effects.
+- The clip-path property can be combined with other CSS properties, such as transform and filter, to create complex visual effects. */
+
+div{
+    clip-path: circle(50% at 50% 50%); /* This means that the div element will be clipped to a circular shape with a radius of
+     50% of its width and height, centered at the center of the element. */
+}
+
+div {
+    clip-path: ellipse(50% 25% at 50% 50%); /* This means that the div element will be clipped to an elliptical shape with a 
+    horizontal radius of 50% and a vertical radius of 25%, centered at the center of the element. */
+}
+
+div {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* This means that the div element will be clipped to a diamond 
+    shape defined by the specified polygon points. */
+}
+
+div {
+    clip-path: inset(10% 20% 30% 40%); /* This means that the div element will be clipped to a rectangular shape with the 
+    specified inset values for the top, right, bottom, and left edges. */
+}
+
+div {
+    clip-path: path('M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80'); /* This means that the div element will be clipped 
+    to a custom shape defined by the specified SVG path. */
+}
+
+div {
+    clip-path: url(#myClipPath); /* This means that the div element will be clipped to a shape defined by the specified SVG clip 
+    path with the ID "myClipPath". */
+}
+/*& CSS MASKING :
+- The mask property is used to create a masking effect for an element, which defines the visible portion of the element based on 
+the alpha channel of the mask image.
+- It can be used to create various effects, such as fading, transparency, and complex shapes.
+- The mask property can take various values, including images, gradients, and SVG masks.
+- The mask property can be animated using CSS animations and transitions, allowing for dynamic and interactive effects.
+- The mask property can be combined with other CSS properties, such as transform and filter, to create complex visual effects. */
+
+div {
+    mask-image: url('mask.png'); /* This means that the div element will be masked using the specified image "mask.png". */
+    mask-repeat: no-repeat; /* This means that the mask image will not be repeated. */
+    mask-position: center; /* This means that the mask image will be positioned at the center of the div element. */
+    mask-size: cover; /* This means that the mask image will cover the entire div element, scaling as necessary. */
+}
+
+div {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* This means that the div element will be 
+    masked using a linear gradient that fades from fully opaque black to fully transparent black from left to right. */
+    mask-repeat: no-repeat; /* This means that the mask gradient will not be repeated. */
+    mask-position: center; /* This means that the mask gradient will be positioned at the center of the div element. */
+    mask-size: cover; /* This means that the mask gradient will cover the entire div element, scaling as necessary. */
+}
+
+div {
+    mask-image: url('mask.svg'); /* This means that the div element will be masked using the specified SVG mask "mask.svg". */
+    mask-repeat: no-repeat; /* This means that the mask SVG will not be repeated. */
+    mask-position: center; /* This means that the mask SVG will be positioned at the center of the div element. */
+    mask-size: cover; /* This means that the mask SVG will cover the entire div element, scaling as necessary. */
+}
+
+div {
+    mask-image: url('mask.png'), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* This means that the div 
+    element will be masked using both the specified image "mask.png" and a linear gradient that fades from fully opaque 
+    black to fully transparent black from left to right. */
+    mask-repeat: no-repeat; /* This means that neither the mask image nor the mask gradient will be repeated. */
+    mask-position: center; /* This means that both the mask image and the mask gradient will be positioned at the center of 
+    the div element. */
+    mask-size: cover; /* This means that both the mask image and the mask gradient will cover the entire div element, 
+    scaling as necessary. */
+}
+
+
+/*& CSS FILTERS :
+- The filter property is used to apply visual effects to an element, such as blurring, sharpening, or changing the color of the element.
+- It can be used to create various effects, such as grayscale, sepia, invert, brightness, contrast, and more.
+- The filter property can take multiple values, separated by spaces, to apply multiple effects to an element.
+- The filter property can be animated using CSS animations and transitions, allowing for dynamic and interactive effects.
+- The filter property can be combined with other CSS properties, such as transform and mask, to create complex visual effects. */
+
+div {
+    filter: blur(5px); /* This means that the div element will be blurred by 5 pixels. */
+    filter: brightness(150%); /* This means that the div element will have its brightness increased by 150%. */
+    filter: contrast(200%); /* This means that the div element will have its contrast increased by 200%. */
+    filter: grayscale(100%); /* This means that the div element will be converted to grayscale (black and white). */
+    filter: hue-rotate(90deg); /* This means that the div element will have its hue rotated by 90 degrees. */
+    filter: invert(100%); /* This means that the div element will have its colors inverted. */
+    filter: opacity(50%); /* This means that the div element will have its opacity set to 50%. */
+    filter: saturate(200%); /* This means that the div element will have its saturation increased by 200%. */
+    filter: sepia(100%); /* This means that the div element will be converted to sepia tone. */
+}
+
+div {
+    filter: drop-shadow(10px 10px 5px black); /* This means that the div element will have a drop shadow with an offset of 10 pixels to the right and 10 pixels down, a blur radius of 5 pixels, and a color of black. */
+    filter: url(#myFilter); /* This means that the div element will be filtered using the specified SVG filter with the ID "myFilter". */
+}
+
+/* this is short hand for multiple filters applied to the div element */
+div {
+    filter: blur(5px) brightness(150%) contrast(200%) grayscale(100%) hue-rotate(90deg) invert(100%) opacity(50%) saturate(200%) sepia(100%); /* This means that the div element will have multiple filters applied to it, including blur, brightness, contrast, grayscale, hue rotation, inversion, opacity, saturation, and sepia. */
+}
+
+/*& CSS PERSPECTIVE :
+- The perspective property is used to give a 3D-positioned element some perspective.
+- It is used to create a sense of depth and distance in 3D space.
+- The perspective property can be applied to the parent element of a 3D-transformed element
+- The perspective property can take a length value, which defines the distance from the viewer to the z=0 plane.
+- The perspective property can be combined with other CSS properties, such as transform and filter, to create complex
+ visual effects. */
+
+ div {
+    perspective: 500px; /* This means that the div element will have a perspective of 500 pixels, creating a sense of depth and distance in 3D space. */
+    perspective-origin: center; /* This means that the perspective will be applied from the center of the div element. */
+    transform-style: preserve-3d; /* This means that the div element will preserve its 3D transformations, allowing for nested 3D elements to be displayed correctly. */
+}
+
+div {
+    perspective: 1000px; /* This means that the div element will have a perspective of 1000 pixels, creating a sense of depth and distance in 3D space. */
+    perspective-origin: top left; /* This means that the perspective will be applied from the top left corner of the div element. */
+    transform-style: flat; /* This means that the div element will not preserve its 3D transformations, and nested 3D elements will be flattened. */
+}
+
+div {
+    perspective: 2000px; /* This means that the div element will have a perspective of 2000 pixels, creating a sense of depth and distance in 3D space. */
+    perspective-origin: bottom right; /* This means that the perspective will be applied from the bottom right corner of the div element. */
+    transform-style: preserve-3d; /* This means that the div element will preserve its 3D transformations, allowing for nested 3D elements to be displayed correctly. */
+}
+
+div {
+    perspective: 3000px; /* This means that the div element will have a perspective of 3000 pixels, creating a sense of depth and distance in 3D space. */
+    perspective-origin: 50% 50%; /* This means that the perspective will be applied from the center of the div element. */
+    transform-style: flat; /* This means that the div element will not preserve its 3D transformations, and nested 3D elements will be flattened. */
+}
+
+div {
+    perspective: 4000px; /* This means that the div element will have a perspective of 4000 pixels, creating a sense of depth and distance in 3D space. */
+    perspective-origin: 25% 75%; /* This means that the perspective will be applied from a point that is 25% from the left and 75% from the top of the div element. */
+    transform-style: allow-3d; /* This means that the div element will preserve its 3D transformations, allowing for nested 3D elements to be displayed correctly. */
+}
+
+/*& CSS BACKFACE-VISIBILITY :
+- The backface-visibility property is used to determine whether the back face of an element is visible when it is not facing the screen.
+- It is used to create 3D effects and animations, such as flipping cards or rotating elements.
+- The backface-visibility property can take two values: visible and hidden.
+- The backface-visibility property can be combined with other CSS properties such as transform and perspective to create complex visual effects. */
+
+div {
+    backface-visibility: visible; /* This means that the back face of the div element will be visible when it is not facing the screen. */
+    backface-visibility: hidden; /* This means that the back face of the div element will be hidden when it is not facing the screen. */
+}
+
+div {
+    backface-visibility: visible; /* This means that the back face of the div element will be visible when it is not facing the screen. */
+    backface-visibility: hidden; /* This means that the back face of the div element will be hidden when it is not facing the screen. */
+    transform: rotateY(180deg); /* This means that the div element will be rotated 180 degrees around the y-axis, effectively flipping it to show its back face. */
+}
+
+/*!NOTE 1.1 - THIS IS THE END OF CHAPTER 4, WHERE WE LEARNED ABOUT 3D TRANSFORMATIONS AND ANIMATIONS AND MUCH MORE THINGS IF YOU STUCK SOMEWHERE 
+/*!REACH OUT ONCE YOU NEED HELP!- VIA EMAIL OR GITHUB AND IF YOU HAVE ANY QUESTIONS YOU CAN EVEN ASK FROM DIFFERENT SOURCES OF A.I!*/
+
+/*!NOTE 1.2 - YOU CAN PRACTICE THIS ON A SINGLE HTML FILE AND AND CSS FILE FOR CLEAR UNDERSTANDING!*/
+
+/*^KEEP LEARNING AND KEEP PRACTICING! CAUSE IT SIGN OF GOOD WEB-DEVELOPER SO, HAPPY CODING! AUTHOR-"tanmay119-pera"(ADESH)*/
