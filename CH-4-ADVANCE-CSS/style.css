@@ -1,0 +1,133 @@
+/*&                                             CH-4 ADVANCED CSS                                                            */
+
+/*!NOTE- WE WILL LEARN HOW STAND OUT DIFFERENTLY FROM THE REST. AFTER THIS WE WILL MAKE A WEBSITE CLONE AND LEARN HOW TO CREATE A RESPONSIVE AND MODERN LOOKING WEBSITE. */
+
+/*& TRANSITION IN CSS :
+
+- Transition is a CSS property that allows you to change property values smoothly (over a given duration).
+- It is used to create animations and effects on elements when they are hovered over or clicked.
+- The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, 
+  and transition-delay.
+
+- The transition-property specifies the name of the CSS property the transition effect is for.
+- The transition-duration specifies how many seconds or milliseconds a transition effect takes to complete.
+- The transition-timing-function specifies the speed curve of the transition effect.
+- The transition-delay specifies when the transition effect will start.*/
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 2px solid black;
+    transition-property:all; /* This means that all properties of the div will be transitioned. */
+    transition-duration: 2s; /* This means that the transition will take 2 seconds to complete. */
+    transition-timing-function: ease-in-out; /* This means that the transition will start slowly, then speed up, and then slow down again. */
+    transition-delay: 0s; /* This means that the transition will start immediately. */
+
+    /*transition shorthand property is used to specify the transition effect for all properties of the div element. 
+    The transition will take 2 seconds to complete, will start slowly, then speed up, and then slow down again, 
+    and will start immediately. */
+    transition:font-size 2s ease-in-out 0s, background-color 2s ease-in-out 0s; /* This means that the font-size and 
+    background-color properties of the div will be transitioned. */
+}
+
+/* The :hover pseudo-class is used to select elements when the mouse pointer is over them. 
+   The :active pseudo-class is used to select elements when they are being activated (e.g., clicked on). */
+
+div:hover{
+    background-color: blue;
+    transition: background-color 2s ease-in-out; /* This means that the background color will change from red to blue over a duration of 2 seconds with an ease-in-out timing function. */
+}
+
+div:active{
+    background-color: green;
+    transition: background-color 2s ease-in-out; /* This means that the background color will change from red to green over a duration of 2 seconds with an ease-in-out timing function. */
+}
+
+/*& CSS TRANSFORMS :
+- The transform property allows you to rotate, scale, skew, or translate an element.
+- It is used to apply transformations to elements.
+- The transform property can take multiple values, separated by spaces.
+- The transform-origin property specifies the point around which the transformation is applied.
+
+example: 
+rotate(45deg), scale(1.5), skew(30deg)
+rotate x,y,z: 45deg*/
+
+div {
+    transform: rotate(45deg); /* This means that the div will be rotated 45 degrees clockwise. */
+    transform-origin: center; /* This means that the div will be rotated around its center point. */
+    transform: scale(1.5); /* This means that the div will be scaled to 1.5 times its original size. */
+    transform: skew(30deg); /* This means that the div will be skewed 30 degrees along the x-axis. */
+    transform: translate(50px, 100px); /* This means that the div will be moved 50 pixels to the right and 100 pixels down. */
+    transform: matrix(1, 0, 0, 1, 0, 0); /* This means that the div will be transformed using a 2D transformation matrix. */
+    transform: perspective(500px); /* This means that the div will be transformed using a perspective transformation. */
+    transform: rotateX(45deg); /* This means that the div will be rotated 45 degrees around the x-axis. */
+    transform: rotateY(45deg); /* This means that the div will be rotated 45 degrees around the y-axis. */
+    transform: rotateZ(45deg); /* This means that the div will be rotated 45 degrees around the z-axis. */
+    transform: scaleX(1.5); /* This means that the div will be scaled to 1.5 times its original size along the x-axis. */
+    transform: scaleY(1.5); /* This means that the div will be scaled to 1.5 times its original size along the y-axis. */
+    transform: scaleZ(1.5); /* This means that the div will be scaled to 1.5 times its original size along the z-axis. */
+    transform: translateX(50px); /* This means that the div will be moved 50 pixels to the right along the x-axis. */
+    transform: translateY(100px); /* This means that the div will be moved 100 pixels down along the y-axis. */
+    transform: translateZ(100px); /* This means that the div will be moved 100 pixels forward along the z-axis. */
+
+}
+
+/*& CSS ANIMATIONS :
+- The animation property is a shorthand property for animation-name, animation-duration, animation-timing-function, 
+animation-delay, animation-iteration-count, animation-direction, and animation-fill-mode.
+
+- The animation property allows you to create animations by specifying keyframes and the properties to animate.
+- The animation-name property specifies the name of the @keyframes animation to apply to the element.
+- The animation-duration property specifies how long the animation should take to complete one cycle.
+- The animation-timing-function property specifies the speed curve of the animation.
+- The animation-delay property specifies when the animation should start.
+- The animation-iteration-count property specifies how many times the animation should be played.
+- The animation-direction property specifies whether the animation should play in reverse on alternate cycles.
+- The animation-fill-mode property specifies how the element should be styled before and after the animation is applied. */
+
+div{
+    animation-name: myName; /* This means that the animation will use the keyframes defined in the @keyframes myName rule. */
+    animation-duration: 2s; /* This means that the animation will take 2 seconds to complete one cycle. */
+    animation-timing-function: ease-in-out; /* This means that the animation will start slowly, then speed up, and then slow down again. */
+    animation-delay: 0s; /* This means that the animation will start immediately. */
+    animation-iteration-count: infinite; /* This means that the animation will repeat indefinitely. */
+    animation-direction: alternate; /* This means that the animation will play in reverse on alternate cycles. */
+    animation-fill-mode: forwards; /* This means that the element will retain the styles defined in the last keyframe after the animation is complete. */
+    animation-direction: normal; /* This means that the animation will play in the normal direction. */
+    animation-direction: reverse; /* This means that the animation will play in the reverse direction. */
+    animation-direction: alternate-reverse; /* This means that the animation will play in reverse on alternate cycles, starting with the reverse direction. */
+    animation-direction: alternate; /* This means that the animation will play in reverse on alternate cycles, starting with the normal direction. */
+}
+
+/*^ Keyframes in CSS : (Template for animation)
+- The @keyframes rule is used to define the keyframes for an animation.
+- Keyframes are used to specify the styles that an element should have at specific points during the animation.
+- The @keyframes rule can take multiple keyframes, each defined by a percentage or the keywords "from" and "to".
+- The "from" keyword represents the starting point of the animation (0%), and the "to" keyword represents the ending point 
+of the animation (100%). */ 
+
+@keyframes myName {
+    from {background-color: red;} /* This means that the animation will start with a red background color. */
+    to {background-color: yellow;} /* This means that the animation will end with a yellow background color. */
+}
+
+@keyframes myName {
+  from{font-size: 10px;} /* This means that the animation will start with a font size of 10 pixels. */
+  to{font-size: 20px;} /* This means that the animation will end with a font size of 20 pixels. */
+}
+
+/*^ Animation-shorthand property */
+div{
+    animation: myName 2s ease-in-out 0s infinite alternate; /* This means that the animation will use the keyframes 
+    defined in the @keyframes myName rule, will take 2 seconds to complete one cycle, will start slowly, then speed up, 
+    and then slowdown again, will start immediately, will repeat indefinitely, and will play in reverse on alternate cycles. */
+}
+
+/*^ percentage keyframes */
+@keyframes myName {
+    0% {background-color: red;} /* This means that at the start of the animation (0%), the background color will be red. */
+    50% {background-color: yellow;} /* This means that at the midpoint of the animation (50%), the background color will be yellow. */
+    100% {background-color: green;} /* This means that at the end of the animation (100%), the background color will be green. */
+}
