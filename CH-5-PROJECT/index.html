@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Framework CSS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Nexus<span class="accent">.css</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-wrapper">
+            <header class="top-bar">
+                <button id="menu-toggle" class="menu-btn" aria-label="Toggle Navigation">☰</button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search metrics, reports...">
+                </div>
+                <div class="user-profile">
+                    <span class="status-dot"></span>
+                    <span class="username">Adesh S.</span>
+                </div>
+            </header>
+
+            <main class="content-body">
+                <div class="page-header">
+                    <h1>Overview</h1>
+                    <p>Proving that native CSS Grid & Flexbox run the web.</p>
+                </div>
+
+                <section class="metrics-grid">
+                    <div class="card">
+                        <h3>Total Revenue</h3>
+                        <p class="metric-value">$84,200</p>
+                        <span class="badge positive">+14.2%</span>
+                    </div>
+                    <div class="card">
+                        <h3>Active Subscriptions</h3>
+                        <p class="metric-value">1,429</p>
+                        <span class="badge positive">+5.1%</span>
+                    </div>
+                    <div class="card">
+                        <h3>Server Latency</h3>
+                        <p class="metric-value">24ms</p>
+                        <span class="badge neutral">Optimal</span>
+                    </div>
+                    <div class="card">
+                        <h3>Conversion Rate</h3>
+                        <p class="metric-value">3.8%</p>
+                        <span class="badge negative">-0.4%</span>
+                    </div>
+                </section>
+
+                <section class="table-section">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <h3>Recent Deployments</h3>
+                            <button class="action-btn">View All</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table>
+                               <thead>
+                                    <tr>
+                                        <th>Project</th>
+                                        <th>Branch</th>
+                                        <th>Status</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>auth-service</td>
+                                        <td><code>main</code></td>
+                                        <td><span class="status success">Successful</span></td>
+                                        <td>2 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>payment-gateway</td>
+                                        <td><code>v2-beta</code></td>
+                                        <td><span class="status success">Successful</span></td>
+                                        <td>14 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ui-component-library</td>
+                                        <td><code>feature/grid</code></td>
+                                        <td><span class="status pending">Building</span></td>
+                                        <td>1 hour ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>analytics-pipeline</td>
+                                        <td><code>hotfix/patch</code></td>
+                                        <td><span class="status failed">Failed</span></td>
+                                        <td>3 hours ago</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
